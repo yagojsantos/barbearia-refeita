@@ -6,7 +6,7 @@ Acrescentei um tipo de rodapé e personalizei as cores e fotos.
 | -------------  | --- |
 | :sparkles: Nome        | **Refazendo Barbearia Alura**
 | :label: Tecnologias | html, css
-| :rocket: URL         |  https://yagojsantos.github.io/barbearia-refeita
+| :rocket: URL         |  https://yagojsantos.github.io/barbearia-refeita.git
 
 ![](https://github.com/yagojsantos/barbearia-refeita/blob/main/barbearia-refeita.png#vitrinedev)
 
