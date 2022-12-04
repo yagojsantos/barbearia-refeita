@@ -8,7 +8,7 @@ Acrescentei um tipo de rodapé e personalizei as cores e fotos.
 | :label: Tecnologias | html, css
 | :rocket: URL         |  https://yagojsantos.github.io/barbearia-refeita
 
-![](https://github.com/yagojsantos/barbearia-refeita/commit/2f6e75024fb893cf0d684bb71eabdd33b36630cb#vitrinedev)
+![](https://github.com/yagojsantos/barbearia-refeita/blob/main/barbearia-refeita.png#vitrinedev)
 
-##Obs
+Obs:
 A maior dificuldade foi utilizar a propriedade display do css. Acredito que não gravei direito a lógica de seu funcionamento e por isso, irei revisar os estudos.
