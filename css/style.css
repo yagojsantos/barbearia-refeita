@@ -44,7 +44,7 @@ header{
     color: #b6b6b6; 
     text-decoration:line-through;
 }
-/* Sessão sobre a barbearia*/
+/* PÁGINA HOME - Sessão sobre a barbearia */
 .caixa_conteudo_barbearia{ 
     background: url(../imagens/sobre-foto.jpg);
     width: 100%; 
@@ -78,7 +78,7 @@ header{
     font-size: 1.08em;
 }
 
-/* Sessão sobre os beneficios*/
+/* PÁGINA HOME - Sessão sobre os beneficios*/
 
 .beneficios{
     width: 600px;
