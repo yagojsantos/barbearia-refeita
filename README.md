@@ -8,4 +8,4 @@ A fim de testar os conhecimentos obtidos até o momento, resolvi recodificar e u
 | :label: Tecnologias | html, css
 | :rocket: URL         |  https://yagojsantos.github.io/barbearia-refeita/
 
-![](https://github.com/yagojsantos/barbearia-refeita/blob/main/barbearia-refeita.png#vitrinedev)
+![](https://github.com/yagojsantos/barbearia-refeita/blob/main/imagens/capa-home.png#vitrinedev)
