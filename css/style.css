@@ -1,3 +1,5 @@
+/* Elementos do Cabeçalho*/
+
 header{
     background-image: url(../imagens/bg-rep.jpg);
     width: 100%;
@@ -10,7 +12,15 @@ header{
     margin: 0 auto;
     position: relative;
 }
-
+.logotipo{
+    width: 300px;
+    height: 250px;
+    cursor: pointer;
+    transition: transform 2s;
+}
+.logotipo:hover{
+    transform: scale(1.05);
+}
 .caixa_logo_navegacao nav{
     position: absolute;
     top: 125px;
@@ -29,23 +39,13 @@ header{
 }
 .caixa_logo_navegacao nav a:hover{
     font-size: 28px;
-    color: #FFFFFF; 
 }
 .caixa_logo_navegacao nav a:active{
     color: #b6b6b6; 
     text-decoration:line-through;
 }
-
-.logotipo{
-    width: 300px;
-    height: 250px;
-    cursor: pointer;
-    transition: transform 2s;
-}
-.logotipo:hover{
-    transform: scale(1.05);
-}
-.sobre_barbearia{ 
+/* Sessão sobre a barbearia*/
+.caixa_conteudo_barbearia{ 
     background: url(../imagens/sobre-foto.jpg);
     width: 100%; 
     height: 836px;
@@ -56,41 +56,38 @@ header{
     background-color: rgba(0, 0, 0, 0.527);
     color: #FFFFFF; 
     display: inline-block;
-    margin: 40px 40px 30px;
+    margin: 3% 3% 2%;
     border: 2px dashed #b6b6b6;
 }
 .sobre_texto h2{
    font-weight: bold;
-   font-size: 50px;
+   font-size: 3em;
    text-align: center;
-   margin: 20px;
+   margin: 0.3em;
+}
+.sobre_texto p{
+    text-align: justify;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    padding: 0 1.1em;
 }
 .sobre_texto em{
     color: red;
     font-style: italic;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.08em;
 }
-.sobre_texto p{
-    text-align: justify;
-    font-size: 20px;
-    margin-bottom: 20px;
-    padding: 0 20px;
-}
+
+/* Sessão sobre os beneficios*/
+
 .beneficios{
     width: 600px;
     padding: 10px;
-    margin-left: 40%;
- 
+    float: right;
+    margin-right: 3%;
 }
-.foto_beneficios{
-    height: 400px;
-    width:300px;
-    border-radius: 45px;
-}
-
 .lista_beneficios{
-    font-size: 18px;
+    font-size: 1.1em;
     font-style: italic;
     font-weight: bold;
     display: inline-block;
@@ -98,18 +95,26 @@ header{
     vertical-align: top;
     color: white;
     border: dashed 1px #b6b6b6;
-    padding: 20px;
+    padding: 1.2em 1.2em 1.2em 2em;
 }
 .lista_beneficios h2{
-    font-size: 35px;
+    font-size: 2em;
     text-align: center;
 }
 .lista_beneficios ul{
-    margin-top: 20px;
+    margin-top: 1.1em;
     list-style-type:disc;
 }
+.foto_beneficios{
+    height: 400px;
+    width:300px;
+    border-radius: 45px;
+}
+
+/*Elementos do rodapé*/
 
 footer{
+    clear: right;
     background-image: url(../imagens/bg-rep.jpg);
     width: 100%;
     height: 300px; 
