@@ -12,13 +12,13 @@ header{
     margin: 0 auto;
     position: relative;
 }
-.logotipo{
+.logotipo_cabecalho{
     width: 300px;
     height: 250px;
     cursor: pointer;
     transition: transform 2s;
 }
-.logotipo:hover{
+.logotipo_cabecalho:hover{
     transform: scale(1.05);
 }
 .caixa_logo_navegacao nav{
@@ -111,6 +111,63 @@ header{
     border-radius: 45px;
 }
 
+/* PÁGINA PRODUTOS - Sessão produtos*/
+.caixa_conteudo_produtos{
+    background-image: url(../imagens/bg-rep2.jpg);
+}
+.produtos{
+    width: 100%;
+    background-color:  rgba(34, 33, 33, 0.795);
+}
+.lista_produtos{
+    width: 900px;
+    margin: 0px auto;
+    padding: 50px;
+}
+.lista_produtos li:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.item_lista_produtos{
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;
+    text-align: center;
+    padding: 30px 20px;
+    margin-left: 2%;
+    border: 2px dashed white;
+    border-radius: 10px;
+    transition: all 0.4s;
+    background: rgba(0, 0, 0, 0.767);
+    color: white;
+}
+.item_lista_produtos:hover{
+    background: rgba(184, 184, 184, 0.432);
+    color: black;
+}
+.item_lista_produtos:active{
+    background: rgba(0, 0, 0, 0.767);
+    color: white;
+}
+.item_lista_produtos h3{
+    font-weight: bold;
+    font-size: 2em;
+    text-transform:capitalize;
+    margin-bottom: 0.5em;
+}
+.item_lista_produtos img{
+    width: 150px;
+    height: 200px;
+}
+.item_lista_produtos p{
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+.item_lista_produtos em{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
 /*Elementos do rodapé*/
 
 footer{
@@ -121,11 +178,22 @@ footer{
     padding: 25px 0;
     position: relative;
 }
+.logotipo_rodape{
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 2s;
+}
+.logotipo_rodape:hover{
+    transform: scale(1.05);
+}
 .logo_copyright{
+    box-sizing: border-box;
     width: 400px;
     height: 290px;
     text-align: center;
     margin: 0 auto;
+    padding: 30px;
 }
 .copyright{
     font-size: 12px;
@@ -133,9 +201,13 @@ footer{
     margin-top: 10px;
 }
 .ass_logo{
-    width: 100px;
-    height: 80px;
+    width: 70px;
+    height: 50px;
     position: absolute;
     left: 90%;
     bottom: 10%;
+}
+.ass_logo:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
