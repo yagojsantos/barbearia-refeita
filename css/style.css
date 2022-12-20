@@ -124,10 +124,6 @@ header{
     margin: 0px auto;
     padding: 50px;
 }
-.lista_produtos li:hover{
-    transform: scale(1.03);
-    cursor: pointer;
-}
 .item_lista_produtos{
     display: inline-block;
     vertical-align: top;
@@ -142,6 +138,8 @@ header{
     color: white;
 }
 .item_lista_produtos:hover{
+    transform: scale(1.03);
+    cursor: grab;
     background: rgba(184, 184, 184, 0.432);
     color: black;
 }
