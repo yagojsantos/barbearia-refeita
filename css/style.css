@@ -166,6 +166,67 @@ header{
     font-weight: bold;
 }
 
+/* PÁGINA CONTATO - formulário*/
+.formulario_contato{
+    margin: 40px auto;
+    width: 940px;
+    background-color: red;
+    box-sizing: border-box;
+}
+.caixa_conteudo_contato{
+    background-color: blue; 
+    width: 49%;
+    border: solid 1px black;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+.caixa_conteudo_contato label{
+    display: block;
+    font-size: 1.2em;
+    margin: 0.5em 0 ;
+}
+.dados_contato input,textarea{
+    padding: 10px 20px;
+    width: 80%;
+    margin-bottom: 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.preferencia_contato{
+    margin-top: 0.5em;
+}
+.preferencia_contato legend{
+    font-size: 1.5em;
+}
+.preferencia_contato p{
+    font-size: 1.3em;
+    margin: 0.6em 0 0.4em ;
+}
+.preferencia_contato select{
+    margin-bottom: 1em;
+}
+.enviar_contato{
+    background-color: pink;
+}
+.bt_enviar{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    padding: 0.3em 0.5em; 
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: absolute;
+}
+.cv_aponta{
+    width: 250px;
+    height: 400px;
+    background: white;
+    float: right;  
+    margin-right: 5%;
+}
 /*Elementos do rodapé*/
 
 footer{

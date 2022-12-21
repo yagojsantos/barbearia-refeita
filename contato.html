@@ -21,17 +21,47 @@
             </div>
         </header>
         <main>
-            <form action="submit">
-                <fieldset>
-                  
-
+            <form action="submit" class="formulario_contato">
+                <fieldset class="caixa_conteudo_contato dados_contato">
+                        <label for="nomecompleto">Nome e Sobrenome:</label>
+                        <input type="text" id="nomecompleto" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="email@domínio.com" required>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" placeholder="(XX)xxxxx-xxxx" required>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
                 </fieldset>
-                <fieldset>
-
+                <fieldset class="caixa_conteudo_contato preferencia_contato">
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio_email">
+                        <input type="radio" id="radio_email" name="opcoes_contato">
+                        Email
+                    </label>
+                    <label for="radio_telefone">
+                        <input type="radio" id="radio_telefone" name="opcoes_contato">
+                        Telefone
+                    </label>
+                    <label for="radio_whatsapp">
+                        <input type="radio" id="radio_whatsapp" name="opcoes_contato" checked>
+                        Whatsapp
+                    </label>
+                    <p>Qual período prefere ser atendido?</p>
+                    <select>
+                        <option value="Manhã">Manhã</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noite">Noite</option>
+                    </select>
+                    <label for="novidade_email">
+                        <input type="checkbox" id="novidade_email" checked>
+                        Gostaria de receber nossas novidades por email?
+                    </label>
+                    <fieldset class="enviar_contato">
+                        <input type="submit" value="Enviar Fomulário" class="bt_enviar">
+                        <img class="cv_aponta" src="imagens/cv-aponta.png" alt="Caveira apontando para botão de enviar">    
+                    </fieldset>
                 </fieldset>
                 
-                <input type="submit" value="Enviar Fomulário">
-
             </form>
             <div class="intinerario_funcionamento">
                 <table>
