@@ -1,3 +1,4 @@
+![yagojsantos-repo-status](https://img.shields.io/badge/Status-Em_Andamento-lightgrey?style=for-the-badge&logo=headspace&logoColor=yellow&color=lightgrey)
 # Barbearia-refeita
 
 A fim de testar os conhecimentos obtidos até o momento, resolvi recodificar e unificar os 3 projetos desenvolvidos da Barbearia Alura (Home, Produtos, Contato), desenvolvendo o html e o css do zero, usando apenas o que havia absorvido.
