@@ -45,7 +45,7 @@ header{
     text-decoration:line-through;
 }
 /* PÁGINA HOME - Sessão sobre a barbearia */
-.caixa_conteudo_barbearia{ 
+.fundo_img_index{ 
     background: url(../imagens/sobre-foto.jpg);
     width: 100%; 
     height: 836px;
@@ -112,10 +112,11 @@ header{
 }
 
 /* PÁGINA PRODUTOS - Sessão produtos*/
-.caixa_conteudo_produtos{
+.fundo_img_pgs{
     background-image: url(../imagens/bg-rep2.jpg);
 }
-.produtos{
+.pelicula{
+    padding: 20px 0;
     width: 100%;
     background-color:  rgba(34, 33, 33, 0.795);
 }
@@ -167,20 +168,23 @@ header{
 }
 
 /* PÁGINA CONTATO - formulário*/
-.formulario_contato{
-    margin: 40px auto;
-    width: 940px;
-    background-color: red;
+.caixa_intinerario_funcionamento  .formulario_contato, .caixa_conteudo_contato{
     box-sizing: border-box;
+    color: white;
+}
+.caixa_formulario_contato{
+    border: 2px solid grey;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.767);
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 10px;
 }
 .caixa_conteudo_contato{
-    background-color: blue; 
     width: 49%;
-    border: solid 1px black;
     display: inline-block;
     vertical-align: top;
     padding: 0 2%;
-    box-sizing: border-box;
 }
 .caixa_conteudo_contato label{
     display: block;
@@ -193,12 +197,11 @@ header{
     margin-bottom: 1em;
     border: 1px solid black;
     border-radius: 10px;
-}
-.preferencia_contato{
-    margin-top: 0.5em;
+    resize: none;
 }
 .preferencia_contato legend{
     font-size: 1.5em;
+    padding-top: 0.5em;
 }
 .preferencia_contato p{
     font-size: 1.3em;
@@ -207,25 +210,61 @@ header{
 .preferencia_contato select{
     margin-bottom: 1em;
 }
-.enviar_contato{
-    background-color: pink;
-}
 .bt_enviar{
+    color: white;
     font-weight: bold;
     font-size: 1.5em;
-    color: white;
     padding: 0.3em 0.5em; 
     background-color: black;
-    border: 1px solid black;
+    border: 2px dashed white;
     border-radius: 10px;
     position: absolute;
+    cursor: pointer;
+    transition: all 1s;
+}
+.bt_enviar:hover{
+    background-color: #888888;
+    transform: scale(1.05);
 }
 .cv_aponta{
     width: 250px;
     height: 400px;
-    background: white;
     float: right;  
     margin-right: 5%;
+}
+.caixa_intinerario_funcionamento{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.caixa_intinerario_funcionamento table,#texto_funcionamento{
+    display: inline-block;
+}
+#texto_funcionamento{
+   vertical-align:top;
+   font-size: 1.5em;
+   font-style: italic;
+   margin: 4% 8% 4% 5%;
+   color: white;
+}
+
+#texto_funcionamento::after{
+    content: "⇛ ";
+}
+.caixa_intinerario_funcionamento td,th{
+    font-size: 1.2em;
+    border: 1px dotted white;
+    color: white;
+}
+.caixa_intinerario_funcionamento th{
+    font-weight: bold;
+  background-color: white;
+  font-style: italic;
+  line-height: 2em;
+  color: black;
+}
+.caixa_intinerario_funcionamento td{
+    padding: 0.3em;
 }
 /*Elementos do rodapé*/
 
