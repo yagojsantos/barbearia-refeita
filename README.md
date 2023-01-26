@@ -11,7 +11,6 @@ A fim de testar os conhecimentos obtidos até o momento, resolvi recodificar e u
 
 ![](https://github.com/yagojsantos/barbearia-refeita/blob/main/imagens/capa-home.png#vitrinedev)
 
-
 ## Home
 Na recodificação da página “Home”, após criar sua estrutura base, revisei o código a fim de eliminar configurações desnecessárias na estilização do css. Substitui alguns elementos HTML como, tags div para section e utilizei o float para melhor posicionar imagens.
 
@@ -59,3 +58,27 @@ As imagens encontradas para representar cada item da lista de produtos, não fic
 
 <hr>
 
+## Contato
+Após inserido elementos de input, legendas e figuras, modifiquei totalmente a estrutura do formulário se comparado ao modelo anterior. Optei em dividi-lo em Fields separadas de acordo com a semântica de cada parte, além de aplicar toda estilização com base nos padrões já desenvolvidos nas páginas anteriores. Nessa etapa do desenvolvimento, executei a manutenção do código css removendo seletores repetidos e/ou sem serventia. 
+
+<table>
+    <thead>
+      <tr>
+        <th>Antes</th>
+        <th>Depois</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://yagojsantos.github.io/barbearia-alura-contato/"><img width="400px" src="https://github.com/yagojsantos/barbearia-refeita/blob/main/doc_img_antigos/antigo_contato.png" alt="Captura da página antes da recodificação"></a></td>
+        <td><a href="https://yagojsantos.github.io/barbearia-refeita/contato.html"><img width="400px" src="https://github.com/yagojsantos/barbearia-refeita/blob/main/doc_img_novos/novo_contato.png" alt="Captura da página como ela está atualmente"></a></td>
+      </tr>
+    </tbody>
+  </table>
+  
+### Desafio
+Idealizar a nova proposta de layout do formulário foi uma árdua tarefa. Notei que levaria muito tempo se tivesse de voltar ao navegador, para utilizar o DevTools, sempre que quisesse conferir se o tamanho das divisões estava conflitando de alguma forma, então, resolvi definir uma cor de fundo diferente para cada uma delas. Isso além de agilizar o processo, facilitou em determinar e entender o funcionamento e características dos elementos a serem adicionados.
+
+<hr>
+
+# Próximo passo: Tornar todas as páginas responsivas. 
