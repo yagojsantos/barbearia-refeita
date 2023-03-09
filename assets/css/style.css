@@ -1,47 +1,56 @@
-/* Elementos do Cabeçalho*/
+:root{
+    font-size: 62.5%;
 
-header{
-    background-image: url(../imagens/bg-rep.jpg);
-    width: 100%;
-    height: 250px;
-    padding: 20px 0;
-    
+    --cor-fonte-primaria: #FFFFFF;
+    --cor-fonte-secundaria: #b6b6b6;
+    --cor-fonte-destaque: #FF0000;
 }
-.caixa_logo_navegacao {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
+*{
+    box-sizing: border-box;
 }
-.logotipo_cabecalho{
-    width: 300px;
-    height: 250px;
+
+/* Elementos do Cabeçalho*/
+.logotipo{
+    width: 30rem;
+    height: 23rem;
     cursor: pointer;
     transition: transform 2s;
 }
-.logotipo_cabecalho:hover{
-    transform: scale(1.05);
+.logotipo:hover{
+    transform: scale(1.02);
 }
-.caixa_logo_navegacao nav{
-    position: absolute;
-    top: 125px;
-    right: 0;
+.cabecalho{
+    background-image: url(../img/bg-rep.jpg);
+    width: 100vw;
+    height: 25rem;   
+    padding: 1rem 0;
 }
-.caixa_logo_navegacao nav li{
-    display: inline-block; 
+.cabecalho__container {
+    width: 80%;
+    height: 23rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.caixa_logo_navegacao nav a{
+
+.cabecalho__menu{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.cabecalho__menu__link{
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    font-size: 26px;
-    color: #FFFFFF;
-    margin-left: 10px;  
+    font-size: 2.6rem;
+    color: var(--cor-fonte-primaria);
 }
-.caixa_logo_navegacao nav a:hover{
-    font-size: 28px;
+.cabecalho__menu__link:hover{
+    font-size: 2.8rem;
 }
-.caixa_logo_navegacao nav a:active{
-    color: #b6b6b6; 
+.cabecalho__menu__link:active{
+    color: var(--cor-fonte-secundaria); 
     text-decoration:line-through;
 }
 /* PÁGINA HOME - Sessão sobre a barbearia */
@@ -54,7 +63,7 @@ header{
     width: 700px;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.527);
-    color: #FFFFFF; 
+    color: var(--cor-fonte-primaria); 
     display: inline-block;
     margin: 3% 3% 2%;
     border: 2px dashed #b6b6b6;
@@ -295,7 +304,7 @@ footer{
 }
 .copyright{
     font-size: 12px;
-    color: #FFFFFF;
+    color: var(--cor-fonte-primaria);
     margin-top: 10px;
 }
 .ass_logo{
@@ -308,4 +317,33 @@ footer{
 .ass_logo:hover{
     transform: scale(1.2);
     cursor: pointer;
+}
+@media screen and (min-width:320px) and (max-width:480px){
+    /* ELEMENTOS CABEÇALHO */
+    .logotipo{
+        width: 25rem;
+    }
+    .cabecalho{
+        width: 100vw;
+        height: auto;   
+    }
+    .cabecalho__container {
+        height: auto;
+        margin: 0 auto;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .cabecalho__menu{
+        gap: 0.8rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .cabecalho__menu__link{
+        font-size: 1.8rem;
+    }
+    .cabecalho__menu__link:hover{
+        font-size: 2rem;
+    }
 }
