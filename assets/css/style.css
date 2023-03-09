@@ -1,9 +1,12 @@
 :root{
     font-size: 62.5%;
-
     --cor-fonte-primaria: #FFFFFF;
     --cor-fonte-secundaria: #b6b6b6;
     --cor-fonte-destaque: #FF0000;
+}
+body{
+    min-height: 100vh;
+    min-width: 100vw;
 }
 *{
     box-sizing: border-box;
@@ -55,7 +58,7 @@
 }
 /* PÁGINA HOME - Sessão sobre a barbearia */
 .fundo_img_index{ 
-    background: url(../imagens/sobre-foto.jpg);
+    background: url(../img/sobre-foto.jpg);
     width: 100%; 
     height: 836px;
 }
@@ -122,7 +125,7 @@
 
 /* PÁGINA PRODUTOS - Sessão produtos*/
 .fundo_img_pgs{
-    background-image: url(../imagens/bg-rep2.jpg);
+    background-image: url(../img/bg-rep2.jpg);
 }
 .pelicula{
     padding: 20px 0;
@@ -279,7 +282,7 @@
 
 footer{
     clear: right;
-    background-image: url(../imagens/bg-rep.jpg);
+    background-image: url(../img/bg-rep.jpg);
     width: 100%;
     height: 300px; 
     padding: 25px 0;
@@ -346,4 +349,63 @@ footer{
     .cabecalho__menu__link:hover{
         font-size: 2rem;
     }
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    /* ELEMENTOS CABEÇALHO */
+    .logotipo{
+        width: 28rem;
+    }
+    .cabecalho{
+        width: 100vw;
+        height: auto;   
+    }
+    .cabecalho__container {
+        height: auto;
+        margin: 0 auto;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .cabecalho__menu{
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .cabecalho__menu__link{
+        font-size: 2rem;
+    }
+    .cabecalho__menu__link:hover{
+        font-size: 2.1rem;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    /* ELEMENTOS CABEÇALHO */
+    .logotipo{
+        width: 28rem;
+    }
+    .cabecalho{
+        width: 100vw;
+        height: auto;   
+    }
+    .cabecalho__container {
+        height: auto;
+        margin: 0 auto;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .cabecalho__menu{
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    .cabecalho__menu__link{
+        font-size: 2rem;
+    }
+    .cabecalho__menu__link:hover{
+        font-size: 2.1rem;
+    }    
+}
+@media screen and (min-width:1025px) and (max-width:1200px){
+    /* ELEMENTOS CABEÇALHO */
+    
 }
