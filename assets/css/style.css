@@ -3,6 +3,8 @@
     --cor-fonte-primaria: #FFFFFF;
     --cor-fonte-secundaria: #b6b6b6;
     --cor-fonte-destaque: #FF0000;
+
+    --fundo-cabecalho-rodape: url(../img/bg-rep.jpg);
 }
 body{
     min-height: 100vh;
@@ -23,7 +25,7 @@ body{
     transform: scale(1.02);
 }
 .cabecalho{
-    background-image: url(../img/bg-rep.jpg);
+    background-image: var(--fundo-cabecalho-rodape);
     width: 100vw;
     height: 25rem;   
     padding: 1rem 0;
@@ -279,46 +281,38 @@ body{
     padding: 0.3em;
 }
 /*Elementos do rodapé*/
-
-footer{
-    clear: right;
-    background-image: url(../img/bg-rep.jpg);
-    width: 100%;
-    height: 300px; 
-    padding: 25px 0;
-    position: relative;
+.logotipo--rodape{
+    width: 25rem;
+    height: 20rem;
+} 
+.rodape{
+    background-image:  var(--fundo-cabecalho-rodape);
+    width: 100vw;
+    height: 30rem; 
 }
-.logotipo_rodape{
-    width: 250px;
-    height: 200px;
-    cursor: pointer;
-    transition: transform 2s;
+.rodape__container{
+    width: 90%;
+    height: auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
 }
-.logotipo_rodape:hover{
-    transform: scale(1.05);
-}
-.logo_copyright{
-    box-sizing: border-box;
-    width: 400px;
-    height: 290px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 30px;
-}
-.copyright{
-    font-size: 12px;
+.rodape__copyright{
+    font-size: 1.2rem;
     color: var(--cor-fonte-primaria);
-    margin-top: 10px;
 }
-.ass_logo{
-    width: 70px;
-    height: 50px;
-    position: absolute;
-    left: 90%;
-    bottom: 10%;
+.ass__link{
+   align-self: flex-end;
 }
-.ass_logo:hover{
-    transform: scale(1.2);
+.ass__logo{
+    width: 7rem;
+    height: 5rem;
+}
+.ass__link:hover{
+    transform: scale(1.1);
     cursor: pointer;
 }
 @media screen and (min-width:320px) and (max-width:480px){
