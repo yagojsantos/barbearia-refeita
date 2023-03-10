@@ -6,6 +6,7 @@
     --cor-fonte-destaque: #FF0000;
 
     --fundo-cabecalho-rodape: url(../img/bg-rep.jpg);
+    --cor-borda-primaria:#b6b6b6;
 }
 body{
     height:  100vh;
@@ -29,7 +30,7 @@ body{
 .cabecalho{
     background-image: var(--fundo-cabecalho-rodape);
     width: 100vw;
-    height: 25rem;   
+    height: 25rem;
     padding: 1rem 0;
 }
 .cabecalho__container {
@@ -57,41 +58,60 @@ body{
     font-size: 2.8rem;
 }
 .cabecalho__menu__link:active{
-    color: var(--cor-fonte-secundaria); 
+    color: var(--cor-fonte-secundaria);
     text-decoration:line-through;
 }
 /* PÁGINA HOME - Sessão sobre a barbearia */
-.fundo_img_index{ 
+.fundo_img_index{
     background: url(../img/sobre-foto.jpg);
-    width: 100%; 
+    width: 100%;
     height: 836px;
 }
-.sobre_texto{
-    width: 700px;
-    height: 300px;
+.conteudo{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+}
+.conteudo__sobre__container{
+    width: 40%;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.527);
-    color: var(--cor-fonte-primaria); 
-    display: inline-block;
-    margin: 3% 3% 2%;
-    border: 2px dashed #b6b6b6;
+    border: 2px dashed var(--cor-borda-primaria);
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    padding: 4rem;
+    margin: 2rem 0 0 2rem;
+    align-self:flex-start;
 }
-.sobre_texto h2{
-   font-weight: bold;
-   font-size: 3em;
-   text-align: center;
-   margin: 0.3em;
+.conteudo__sobre__barbershop{
+    width: 12rem;
+    height: 16rem;
 }
-.sobre_texto p{
+.conteudo__sobre__texto{
+    color: var(--cor-fonte-primaria);
     text-align: justify;
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    padding: 0 1.1em;
+    padding-right: 1rem;
 }
-.sobre_texto em{
-    color: red;
+.titulo__pricipal{
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem;
+}
+.texto__padrao{
+    text-align: justify;
+    font-size: 1.6rem;
+}
+.texto__destaque{
+    color: var(--cor-fonte-destaque);
     font-style: italic;
     font-weight: bold;
-    font-size: 1.08em;
+    font-size: 1.8rem;
 }
 
 /* PÁGINA HOME - Sessão sobre os beneficios*/
@@ -230,7 +250,7 @@ body{
     color: white;
     font-weight: bold;
     font-size: 1.5em;
-    padding: 0.3em 0.5em; 
+    padding: 0.3em 0.5em;
     background-color: black;
     border: 2px dashed white;
     border-radius: 10px;
@@ -245,7 +265,7 @@ body{
 .cv_aponta{
     width: 250px;
     height: 400px;
-    float: right;  
+    float: right;
     margin-right: 5%;
 }
 .caixa_intinerario_funcionamento{
@@ -286,11 +306,11 @@ body{
 .logotipo--rodape{
     width: 25rem;
     height: 20rem;
-} 
+}
 .rodape{
     background-image:  var(--fundo-cabecalho-rodape);
     width: 100vw;
-    height: auto; 
+    height: auto;
     position: absolute;
     bottom: 0;
     display:flex;
@@ -329,7 +349,7 @@ body{
     }
     .cabecalho{
         width: 100vw;
-        height: auto;   
+        height: auto;
     }
     .cabecalho__container {
         height: auto;
@@ -338,7 +358,7 @@ body{
         align-items: center;
         gap: 2rem;
     }
-    
+
     .cabecalho__menu{
         gap: 0.8rem;
         align-items: center;
@@ -355,10 +375,10 @@ body{
     .logotipo--rodape{
         width: 20rem;
         height: 15rem;
-    } 
+    }
     .rodape{
         width: 100vw;
-        height: auto; 
+        height: auto;
         padding: 1rem 0;
     }
     .rodape__container{
@@ -387,7 +407,7 @@ body{
     }
     .cabecalho{
         width: 100vw;
-        height: auto;   
+        height: auto;
     }
     .cabecalho__container {
         height: auto;
@@ -396,7 +416,7 @@ body{
         align-items: center;
         gap: 2rem;
     }
-    
+
     .cabecalho__menu{
         gap: 1rem;
         align-items: center;
@@ -413,7 +433,7 @@ body{
      .logotipo--rodape{
         width: 22rem;
         height: 17rem;
-    } 
+    }
     .ass__link{
     align-self: flex-end;
     }
@@ -425,7 +445,7 @@ body{
     }
     .cabecalho{
         width: 100vw;
-        height: auto;   
+        height: auto;
     }
     .cabecalho__container {
         height: auto;
@@ -442,18 +462,18 @@ body{
     }
     .cabecalho__menu__link:hover{
         font-size: 2.1rem;
-    }  
-    
+    }
+
     /*ELEMENTOS RODAPÉ*/
     .logotipo--rodape{
         width: 22rem;
         height: 17rem;
-    } 
+    }
     .ass__link{
     align-self: flex-end;
-    }  
+    }
 }
 @media screen and (min-width:1025px) and (max-width:1200px){
     /* ELEMENTOS CABEÇALHO */
-    
+
 }
