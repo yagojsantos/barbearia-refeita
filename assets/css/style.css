@@ -1,5 +1,6 @@
 :root{
     font-size: 62.5%;
+    box-sizing: border-box;
     --cor-fonte-primaria: #FFFFFF;
     --cor-fonte-secundaria: #b6b6b6;
     --cor-fonte-destaque: #FF0000;
@@ -7,8 +8,9 @@
     --fundo-cabecalho-rodape: url(../img/bg-rep.jpg);
 }
 body{
-    min-height: 100vh;
-    min-width: 100vw;
+    height:  100vh;
+    width: 100%;
+    position: relative;
 }
 *{
     box-sizing: border-box;
@@ -288,7 +290,12 @@ body{
 .rodape{
     background-image:  var(--fundo-cabecalho-rodape);
     width: 100vw;
-    height: 30rem; 
+    height: auto; 
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 .rodape__container{
     width: 90%;
@@ -343,6 +350,35 @@ body{
     .cabecalho__menu__link:hover{
         font-size: 2rem;
     }
+
+    /*ELEMENTOS RODAPÉ*/
+    .logotipo--rodape{
+        width: 20rem;
+        height: 15rem;
+    } 
+    .rodape{
+        width: 100vw;
+        height: auto; 
+        padding: 1rem 0;
+    }
+    .rodape__container{
+        gap: 0.5rem;
+    }
+    .rodape__copyright{
+        font-size: 1rem;
+        color: var(--cor-fonte-primaria);
+    }
+    .ass__link{
+    align-self: center;
+    }
+    .ass__logo{
+        width: 7rem;
+        height: 5rem;
+    }
+    .ass__link:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
 }
 @media screen and (min-width:481px) and (max-width:768px){
     /* ELEMENTOS CABEÇALHO */
@@ -372,6 +408,15 @@ body{
     .cabecalho__menu__link:hover{
         font-size: 2.1rem;
     }
+
+     /*ELEMENTOS RODAPÉ*/
+     .logotipo--rodape{
+        width: 22rem;
+        height: 17rem;
+    } 
+    .ass__link{
+    align-self: flex-end;
+    }
 }
 @media screen and (min-width:769px) and (max-width:1024px){
     /* ELEMENTOS CABEÇALHO */
@@ -397,7 +442,16 @@ body{
     }
     .cabecalho__menu__link:hover{
         font-size: 2.1rem;
-    }    
+    }  
+    
+    /*ELEMENTOS RODAPÉ*/
+    .logotipo--rodape{
+        width: 22rem;
+        height: 17rem;
+    } 
+    .ass__link{
+    align-self: flex-end;
+    }  
 }
 @media screen and (min-width:1025px) and (max-width:1200px){
     /* ELEMENTOS CABEÇALHO */
