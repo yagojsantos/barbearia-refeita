@@ -442,15 +442,51 @@ body{
     .conteudo__sobre{
         height: auto;
         width: 100%;
-        flex-flow: column wrap;
         gap: 1rem;
-        padding: 0.5rem;
-        align-self:flex-start;
+        padding-bottom: 0.5rem;
+    }
+    .conteudo__sobre__texto{
+       width: 100%;
+    }
+    .conteudo__sobre__texto .titulo__padrao{
+        font-size:3rem;
     }
     .conteudo__sobre__texto .texto__padrao{
-        margin: 1rem;
+        margin: 1rem 0.5rem;
+        font-size: 1.6rem;
     }
     .conteudo__sobre__falelink{
+        width: 100%;
+    }
+    /* PÁGINA HOME - Sessão sobre os beneficios*/
+
+    .beneficios__container{
+        padding: 3rem 1rem 1rem 1rem;
+    }
+    .beneficios__container .titulo__padrao{
+        font-size: 2.3rem;
+        margin: 0;
+    }
+    .beneficios__img{
+        width:100%;        
+    }
+    .beneficios__video{
+        width: 100%;
+        height: 35rem;
+    }
+
+    /* PÁGINA HOME - sessão localizacao */
+
+    .localizacao__container{
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .localizacao__container .titulo__padrao{
+        font-size: 1.7rem;
+        margin: 0;
+    }
+    .localizacao__mapa{
+        height: 100%;
         width: 100%;
     }
 
@@ -525,6 +561,40 @@ body{
     .conteudo__sobre__texto .texto__padrao{
         margin: 1.5rem;
     }
+     
+    /* PÁGINA HOME - Sessão sobre os beneficios*/
+
+     .beneficios__container{
+        padding: 3rem 1rem 1rem 1rem;
+    }
+    .beneficios__container .titulo__padrao{
+        font-size: 3rem;
+    }
+    .beneficios__img{
+        width:80%;        
+    }
+    .beneficios__video{
+        width: 100%;
+        height: 35rem;
+    }
+
+    /* PÁGINA HOME - sessão localizacao */
+
+    .localizacao__container{
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .localizacao__container .titulo__padrao{
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    .localizacao__container .texto__padrao{
+        font-size: 2rem;
+    }
+    .localizacao__mapa{
+        height: 100%;
+        width: 100%;
+    }
 
      /*ELEMENTOS RODAPÉ*/
      .logotipo--rodape{
@@ -574,6 +644,29 @@ body{
     .conteudo__sobre__texto .texto__padrao{
         margin: 1.5rem;
     }
+    /* PÁGINA HOME - Sessão sobre os beneficios*/
+    .beneficios__video{
+        width: 100%;
+        height: 35rem;
+    }
+
+    /* PÁGINA HOME - sessão localizacao */
+
+    .localizacao__container{
+        gap: 3rem;
+        padding: 1rem;
+    }
+    .localizacao__container .titulo__padrao{
+        font-size: 2.8rem;
+        margin: 0;
+    }
+    .localizacao__container .texto__padrao{
+        font-size: 2.1rem;
+    }
+    .localizacao__mapa{
+        height: 90%;
+        width: 90%;
+    }
 
     /*ELEMENTOS RODAPÉ*/
     .logotipo--rodape{
@@ -583,21 +676,4 @@ body{
     .ass__link{
     align-self: flex-end;
     }
-}
-@media screen and (min-width:1025px) and (max-width:1200px){
-    /* ELEMENTOS CABEÇALHO */
-    /* PÁGINA HOME - Sessão sobre a barbearia */
-    /* .conteudo__sobre__container{
-        overflow-x: auto;
-    }
-    .conteudo__sobre{
-        height: auto;
-        width: 100%;  
-    }
-    .conteudo__sobre__texto .titulo__padrao{
-        margin: 4rem;
-    }
-    .conteudo__sobre__texto .texto__padrao{
-        margin: 1.5rem;
-    } */
 }
