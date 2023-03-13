@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Inconsolata&display=swap');
 :root{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -7,10 +8,13 @@
 
     --fundo-cabecalho-rodape: url(../img/bg-rep.jpg);
     --cor-borda-primaria:#b6b6b6;
+
+    --fonte-titulo-primario:'Diplomata SC', cursive;
+    --fonte-texto-primario:  'Inconsolata', monospace;
 }
 body{
     min-height:  100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
@@ -30,7 +34,7 @@ body{
 }
 .cabecalho{
     background-image: var(--fundo-cabecalho-rodape);
-    width: 100vw;
+    width: 100%;
     height: 25rem;
     padding: 1rem 0;
 }
@@ -63,29 +67,30 @@ body{
     text-decoration:line-through;
 }
 /* PÁGINA HOME - Sessão sobre a barbearia */
-.fundo_img_index{
-    background: url(../img/sobre-foto.jpg);
-    width: 100%;
-    height: 836px;
-}
 .conteudo{
-    flex: 1;
     width: 100%;
     display: flex;
+    flex: 1;
     flex-flow: column wrap;
     align-items: center;
     justify-content: space-around;
 }
 .conteudo__sobre__container{
-    width: 40%;
-    height: auto;
+    background: url(../img/sobre-foto.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 836px;
+    padding: 2rem;
+}
+.conteudo__sobre{
+    width: 50%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.527);
     border: 2px dashed var(--cor-borda-primaria);
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     gap: 1rem;
     padding: 4rem;
-    margin: 2rem 0 0 2rem;
     align-self:flex-start;
 }
 .conteudo__sobre__barbershop{
@@ -97,22 +102,57 @@ body{
     text-align: justify;
     padding-right: 1rem;
 }
-.titulo__pricipal{
-    font-weight: bold;
+.titulo__padrao{
+    font-family: var(--fonte-titulo-primario);
     font-size: 3rem;
     text-align: center;
     margin: 1rem;
 }
+.conteudo__sobre__texto .texto__padrao{
+    margin: 2rem;
+}
 .texto__padrao{
     text-align: justify;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-family: var(--fonte-texto-primario);
 }
 .texto__destaque{
     color: var(--cor-fonte-destaque);
     font-style: italic;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
+.conteudo__sobre__falelink{
+    height: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.falelink__img{
+    width: 40%;
+}
+.falelink__link{
+    font-family: var(--fonte-texto-primario);
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: var(--cor-fonte-primaria);
+}
+.falelink__link:hover{
+    color: var(--cor-fonte-secundaria);
+}
+.falelink__link:active{
+    color: var(--cor-fonte-destaque);
+}
+/* .localizacao{
+    width:50%;
+    color: var(--cor-fonte-primaria);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+} */
 
 /* PÁGINA HOME - Sessão sobre os beneficios*/
 
@@ -346,7 +386,7 @@ body{
         width: 25rem;
     }
     .cabecalho{
-        width: 100vw;
+        width: 100%;
         height: auto;
     }
     .cabecalho__container {
@@ -367,6 +407,84 @@ body{
     }
     .cabecalho__menu__link:hover{
         font-size: 2rem;
+    }
+    /* PÁGINA HOME - Sessão sobre a barbearia */
+    .conteudo{
+        width: 100%;
+        display: flex;
+        flex: 1;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .conteudo__sobre__container{
+        background: url(../img/sobre-foto.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 836px;
+        padding: 2rem;
+    }
+    .conteudo__sobre{
+        width: 50%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.527);
+        border: 2px dashed var(--cor-borda-primaria);
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1rem;
+        padding: 4rem;
+        align-self:flex-start;
+    }
+    .conteudo__sobre__barbershop{
+        width: 12rem;
+        height: 16rem;
+    }
+    .conteudo__sobre__texto{
+        color: var(--cor-fonte-primaria);
+        text-align: justify;
+        padding-right: 1rem;
+    }
+    .titulo__padrao{
+        font-family: var(--fonte-titulo-primario);
+        font-size: 3rem;
+        text-align: center;
+        margin: 1rem;
+    }
+    .conteudo__sobre__texto .texto__padrao{
+        margin: 2rem;
+    }
+    .texto__padrao{
+        text-align: justify;
+        font-size: 2rem;
+        font-family: var(--fonte-texto-primario);
+    }
+    .texto__destaque{
+        color: var(--cor-fonte-destaque);
+        font-style: italic;
+        font-weight: bold;
+        font-size: 2.2rem;
+    }
+    .conteudo__sobre__falelink{
+        height: auto;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .falelink__img{
+        width: 40%;
+    }
+    .falelink__link{
+        font-family: var(--fonte-texto-primario);
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: var(--cor-fonte-primaria);
+    }
+    .falelink__link:hover{
+        color: var(--cor-fonte-secundaria);
+    }
+    .falelink__link:active{
+        color: var(--cor-fonte-destaque);
     }
 
     /*ELEMENTOS RODAPÉ*/
@@ -404,7 +522,7 @@ body{
         width: 28rem;
     }
     .cabecalho{
-        width: 100vw;
+        width: 100%;
         height: auto;
     }
     .cabecalho__container {
@@ -442,7 +560,7 @@ body{
         width: 28rem;
     }
     .cabecalho{
-        width: 100vw;
+        width: 100%;
         height: auto;
     }
     .cabecalho__container {
