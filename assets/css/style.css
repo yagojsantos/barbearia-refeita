@@ -557,7 +557,7 @@ body{
 @media screen and (min-width:1025px) and (max-width:1200px){
     /* ELEMENTOS CABEÇALHO */
     /* PÁGINA HOME - Sessão sobre a barbearia */
-    .conteudo__sobre__container{
+    /* .conteudo__sobre__container{
         overflow-x: auto;
     }
     .conteudo__sobre{
@@ -569,5 +569,5 @@ body{
     }
     .conteudo__sobre__texto .texto__padrao{
         margin: 1.5rem;
-    }
+    } */
 }
