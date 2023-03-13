@@ -9,9 +9,10 @@
     --cor-borda-primaria:#b6b6b6;
 }
 body{
-    height:  100vh;
+    min-height:  100vh;
     width: 100%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 *{
     box-sizing: border-box;
@@ -68,13 +69,12 @@ body{
     height: 836px;
 }
 .conteudo{
-    height: auto;
+    flex: 1;
     width: 100%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: space-around;
-    position: absolute;
 }
 .conteudo__sobre__container{
     width: 40%;
@@ -311,8 +311,6 @@ body{
     background-image:  var(--fundo-cabecalho-rodape);
     width: 100vw;
     height: auto;
-    position: absolute;
-    bottom: 0;
     display:flex;
     justify-content: center;
     align-items:center;
