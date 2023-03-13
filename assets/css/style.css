@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Inconsolata&family=Oswald&display=swap');
 :root{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -11,6 +11,8 @@
 
     --fonte-titulo-primario:'Diplomata SC', cursive;
     --fonte-texto-primario:  'Inconsolata', monospace;
+    --fonte-texto-secundario: 'Oswald', sans-serif;
+
 }
 body{
     min-height:  100vh;
@@ -81,7 +83,6 @@ body{
     width: 100%;
     height: 836px;
     padding: 1rem;
-    /* overflow-x: auto; */
 }
 .conteudo__sobre{
     width: 60%;
@@ -89,9 +90,11 @@ body{
     background-color: rgba(0, 0, 0, 0.527);
     border: 2px dashed var(--cor-borda-primaria);
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     padding: 1rem;
     align-self:flex-start;
+    align-items: center;
+    gap: 1rem;
 }
 .conteudo__sobre__texto{
     color: var(--cor-fonte-primaria);
@@ -127,13 +130,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column-reverse;
+    gap: 1rem;
 }
 .falelink__img{
     width: 40%;
+    height: auto;
 }
 .falelink__link{
-    font-family: var(--fonte-texto-primario);
-    font-size: 2.5rem;
+    font-family: var(--fonte-texto-secundario);
+    font-size: 3rem;
     text-decoration: none;
     color: var(--cor-fonte-primaria);
 }
@@ -143,47 +149,68 @@ body{
 .falelink__link:active{
     color: var(--cor-fonte-destaque);
 }
-/* .localizacao{
-    width:50%;
-    color: var(--cor-fonte-primaria);
+/* PÁGINA HOME - Sessão sobre os beneficios*/
+
+.beneficios__container{
+    width: 100%;
     height: auto;
+    padding: 1.6rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 4rem;
+    background-color: #000000;
+    color: var(--cor-fonte-primaria);
+}
+.beneficios__conteudo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+.beneficios__lista{
+   display: flex;
+   flex-flow: column wrap;
+   gap: 1rem;
+}
+.lista__item{
+    font-size: 2.5rem;
+    font-family: var(--fonte-texto-secundario);
+}
+.lista__item::before{
+    content:"☠";
+    padding-right:1rem ;
+}
+.lista__item:first-child{
+    font-weight: 600;
+}
+.beneficios__img{
+    height: 40rem;
+    width:30rem;
+    border-radius: 4.5rem;
+    
+}
+.beneficios__video{
+    width: 50%;
+    height: 35rem;
+}
+
+/* PÁGINA HOME - sessão localizacao */
+.localizacao__container{
+    width:100%;
+    color: var(--cor-fonte-primaria);
+    background: #000000;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: flex-end;
-} */
-
-/* PÁGINA HOME - Sessão sobre os beneficios*/
-
-.beneficios{
-    width: 600px;
-    padding: 10px;
-    float: right;
-    margin-right: 3%;
+    padding: 2rem 0;
+    gap: 4rem;
 }
-.lista_beneficios{
-    font-size: 1.1em;
-    font-style: italic;
-    font-weight: bold;
-    display: inline-block;
-    margin: 10px 5% 0 10px;
-    vertical-align: top;
-    color: white;
-    border: dashed 1px #b6b6b6;
-    padding: 1.2em 1.2em 1.2em 2em;
-}
-.lista_beneficios h2{
-    font-size: 2em;
-    text-align: center;
-}
-.lista_beneficios ul{
-    margin-top: 1.1em;
-    list-style-type:disc;
-}
-.foto_beneficios{
-    height: 400px;
-    width:300px;
-    border-radius: 45px;
+.localizacao__mapa{
+    width: 80%;
+    margin-top: 2rem;
 }
 
 /* PÁGINA PRODUTOS - Sessão produtos*/
