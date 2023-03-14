@@ -2,56 +2,52 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Produtos - Barbearia Alura</title>    
-
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
-        <header>
-            <div class="caixa_logo_navegacao">
-                <h1><a href="index.html"><img class="logotipo_cabecalho" src="imagens/barbearia-logo.png" alt="logotipo-barbearia"></a></h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
+        <header class="cabecalho">
+            <div class="cabecalho__container">
+                <h1><a href="index.html"><img class="logotipo" src="./assets/img/barbearia-logo.png" alt="Logo da Barbearia."></a></h1>
+                <nav class="cabecalho__menu">
+                    <a class="cabecalho__menu__link" href="index.html">Home</a>
+                    <a class="cabecalho__menu__link" href="produtos.html">Produtos</a>
+                    <a class="cabecalho__menu__link" href="contato.html">Contato</a>
                 </nav>
             </div>
         </header>
-        <main>
-            <div class="fundo_img_pgs ">
-                <div class="pelicula ">
-                    <ul class="lista_produtos">
-                        <li class="item_lista_produtos">
-                            <h3>cabelo</h3>
-                            <img src="imagens/cabelo.png" alt="Imagem decorativa do corte de cabelo.">
-                            <p>Na tesoura ou máquina, como o cliente preferir.</p>
-                            <p><em>R$25,00</em></p>
+        <main class="conteudo">
+            <section class="conteudo__produtos__container">               
+                    <ul class="produtos__lista">
+                        <li class="produtos__lista__item">
+                            <h3 class="titulo__padrao">cabelo</h3>
+                            <img class="item__icone" src="assets/img/cabelo.png" alt="Imagem decorativa do corte de cabelo.">
+                            <p class="texto__padrao">Na tesoura ou máquina, como o cliente preferir.</p>
+                            <p><em class="item__preco">R$25,00</em></p>
                         </li>
-                        <li class="item_lista_produtos">
-                            <h3>barba</h3>
-                            <img src="imagens/barba.png" alt="Imagem decorativa do corte de barba.">
-                            <p>Corte e desenho profissional de barba.</p>
-                            <p><em>R$18,00</em></p>
+                        <li class="produtos__lista__item">
+                            <h3 class="titulo__padrao">barba</h3>
+                            <img class="item__icone" src="assets/img/barba.png" alt="Imagem decorativa do corte de barba.">
+                            <p class="texto__padrao">Corte e desenho profissional de barba.</p>
+                            <p><em class="item__preco">R$18,00</em></p>
                         </li>
-                        <li class="item_lista_produtos">
-                            <h3>Barba + Cabelo</h3>
-                            <img src="imagens/barba+cabelo.png" alt="Imagem decorativa do corte de barba e cabelo.">   
-                            <p>Pacote completo de cabelo e barba.</p>
-                            <p><em>R$35,00</em></p>
+                        <li class="produtos__lista__item">
+                            <h3 class="titulo__padrao">Barba + Cabelo</h3>
+                            <img class="item__icone" src="assets/img/barba+cabelo.png" alt="Imagem decorativa do corte de barba e cabelo.">   
+                            <p class="texto__padrao">Pacote completo de cabelo e barba.</p>
+                            <p><em class="item__preco">R$35,00</em></p>
                         </li>
                     </ul>
-                </div>
-            </div>
+            </section>
         </main>
-        <footer>
-            <div class="logo_copyright">
-                <a href="index.html"><img class="logotipo_rodape" src="imagens/barbearia-logo.png" alt="logotipo-barbearia"></a>
-                <p class="copyright">&#169;Copyright Recoding Barbearia - 2022</p>
-            </div>
-            <a href="https://github.com/yagojsantos"><img class="ass_logo" src="imagens/ass-logo.png" alt="assinatura-dev"></a>
+        <footer class="rodape">
+            <div class="rodape__container">
+                <a href="index.html"><img class="logotipo logotipo--rodape" src="./assets/img/barbearia-logo.png" alt="Logo da Barbearia."></a>
+                <p class="rodape__copyright">&#169;Copyright Recoding Barbearia - 2022</p>
+                <a class="ass__link" href="https://github.com/yagojsantos"><img class="ass__logo" src="./assets/img/ass-logo.png" alt="Desenvolvedor Yago."></a>  
+            </div>             
         </footer>
     </body>
 </html>

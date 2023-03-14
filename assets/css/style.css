@@ -6,8 +6,11 @@
     --cor-fonte-secundaria: #b6b6b6;
     --cor-fonte-destaque: #FF0000;
 
+    --cor-fundo-transparente: rgba(0, 0, 0, 0.767);
+
     --fundo-cabecalho-rodape: url(../img/bg-rep.jpg);
     --cor-borda-primaria:#b6b6b6;
+    --cor-borda-secundaria: #FFFFFF;
 
     --fonte-titulo-primario:'Diplomata SC', cursive;
     --fonte-texto-primario:  'Inconsolata', monospace;
@@ -69,7 +72,7 @@ body{
     color: var(--cor-fonte-secundaria);
     text-decoration:line-through;
 }
-/* PÁGINA HOME - Sessão sobre a barbearia */
+/* CONTAINER MAIN */
 .conteudo{
     width: 100%;
     display: flex;
@@ -78,6 +81,24 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+.titulo__padrao{
+    font-family: var(--fonte-titulo-primario);
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem;
+}
+.texto__padrao{
+    text-align: justify;
+    font-size: 2rem;
+    font-family: var(--fonte-texto-primario);
+}
+.texto__destaque{
+    color: var(--cor-fonte-destaque);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+/* PÁGINA HOME - Sessão sobre a barbearia */
 .conteudo__sobre__container{
     background: url(../img/sobre-foto.jpg);
     background-size: cover;
@@ -88,7 +109,7 @@ body{
 .conteudo__sobre{
     width: 60%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color: var(--cor-fundo-transparente);
     border: 2px dashed var(--cor-borda-primaria);
     display: flex;
     flex-flow: column wrap;
@@ -101,29 +122,12 @@ body{
     color: var(--cor-fonte-primaria);
     text-align: justify;
 }
-.titulo__padrao{
-    font-family: var(--fonte-titulo-primario);
-    font-size: 3rem;
-    text-align: center;
-    margin: 1rem;
-}
 .conteudo__sobre__texto .titulo__padrao{
     font-size: 4rem;
 }
 .conteudo__sobre__texto .texto__padrao{
     margin: 2rem;
     font-size: 2.1rem;
-}
-.texto__padrao{
-    text-align: justify;
-    font-size: 2rem;
-    font-family: var(--fonte-texto-primario);
-}
-.texto__destaque{
-    color: var(--cor-fonte-destaque);
-    font-style: italic;
-    font-weight: bold;
-    font-size: 2.2rem;
 }
 .conteudo__sobre__falelink{
     height: auto;
@@ -175,15 +179,15 @@ body{
    flex-flow: column wrap;
    gap: 1rem;
 }
-.lista__item{
+.beneficios__lista__item{
     font-size: 2.5rem;
     font-family: var(--fonte-texto-secundario);
 }
-.lista__item::before{
+.beneficios__lista__item::before{
     content:"☠";
     padding-right:1rem ;
 }
-.lista__item:first-child{
+.beneficios__lista__item:first-child{
     font-weight: 600;
 }
 .beneficios__img{
@@ -215,59 +219,63 @@ body{
 }
 
 /* PÁGINA PRODUTOS - Sessão produtos*/
-.fundo_img_pgs{
+.conteudo__produtos__container{
     background-image: url(../img/bg-rep2.jpg);
-}
-.pelicula{
-    padding: 20px 0;
     width: 100%;
-    background-color:  rgba(34, 33, 33, 0.795);
+    height: 100vh;
 }
-.lista_produtos{
-    width: 900px;
-    margin: 0px auto;
-    padding: 50px;
+.produtos__lista{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:center;
+    gap: 4rem;   
 }
-.item_lista_produtos{
-    display: inline-block;
-    vertical-align: top;
-    width: 230px;
+.produtos__lista__item{
+    width: 23rem;
+    height: 40rem;
     text-align: center;
-    padding: 30px 20px;
-    margin-left: 2%;
-    border: 2px dashed white;
-    border-radius: 10px;
+    padding: 3rem 2rem;
+    border: 0.2rem dashed var(--cor-borda-secundaria);
+    border-radius: 1rem;
     transition: all 0.4s;
-    background: rgba(0, 0, 0, 0.767);
-    color: white;
+    background: var(--cor-fundo-transparente);
+    color: var(--cor-fonte-primaria);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
-.item_lista_produtos:hover{
+.produtos__lista__item:hover{
     transform: scale(1.03);
     cursor: grab;
     background: rgba(184, 184, 184, 0.432);
-    color: black;
+    color: #000000;
 }
-.item_lista_produtos:active{
-    background: rgba(0, 0, 0, 0.767);
-    color: white;
+.produtos__lista__item:active{
+    background: var(--cor-fundo-transparente);
+    color: var(--cor-fonte-primaria);
 }
-.item_lista_produtos h3{
-    font-weight: bold;
-    font-size: 2em;
+.produtos__lista__item .titulo__padrao{
+    font-size: 2rem;
     text-transform:capitalize;
-    margin-bottom: 0.5em;
+    margin: 0;
 }
-.item_lista_produtos img{
-    width: 150px;
-    height: 200px;
+.item__icone{
+    width: 15rem;
+    height: 20rem;
 }
-.item_lista_produtos p{
-    font-size: 1.2em;
-    margin: 1em 0;
-}
-.item_lista_produtos em{
-    font-size: 1.3em;
+.produtos__lista__item .texto__padrao{
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
     font-weight: bold;
+}
+.item__preco{
+    font-size: 2rem;
+    font-weight: bold;  
 }
 
 /* PÁGINA CONTATO - formulário*/
@@ -278,7 +286,7 @@ body{
 .caixa_formulario_contato{
     border: 2px solid grey;
     border-radius: 20px;
-    background: rgba(0, 0, 0, 0.767);
+    background: var(--cor-fundo-transparente);
     width: 940px;
     margin: 0 auto;
     padding-top: 10px;
@@ -471,7 +479,7 @@ body{
         font-size: 2.3rem;
         margin: 0;
     }
-    .lista__item{
+    .beneficios__lista__item{
         font-size: 2rem;
     }
     .beneficios__img{
@@ -500,6 +508,20 @@ body{
     .localizacao__mapa{
         height: 35rem;
         width: 100%;
+    }
+    /* PÁGINA PRODUTOS - Sessão produtos*/
+    .conteudo__produtos__container{
+        height: auto;
+    }
+    .produtos__lista{
+        flex-flow: column nowrap;
+        gap: 3rem;   
+    }
+    .produtos__lista:first-child{
+        margin-top: 3rem;
+    }
+    .produtos__lista:last-child{
+        margin-bottom: 3rem;
     }
 
     /*ELEMENTOS RODAPÉ*/
@@ -587,7 +609,7 @@ body{
     .beneficios__container .titulo__padrao{
         font-size: 3rem;
     }
-    .lista__item{
+    .beneficios__lista__item{
         font-size: 2.7rem;
     }
     .beneficios__img{
@@ -614,6 +636,18 @@ body{
     .localizacao__mapa{
         height: 35rem;
         width: 100%;
+    }
+
+     /* PÁGINA PRODUTOS - Sessão produtos*/
+
+     .conteudo__produtos__container{
+        height: auto;
+    }
+    .produtos__lista:first-child{
+        margin-top: 3rem;
+    }
+    .produtos__lista:last-child{
+        margin-bottom: 3rem;
     }
 
      /*ELEMENTOS RODAPÉ*/
@@ -670,7 +704,7 @@ body{
     .beneficios__container .titulo__padrao{
         font-size: 4rem;
     }
-    .lista__item{
+    .beneficios__lista__item{
         font-size: 2.7rem;
     }
     .beneficios__video{
@@ -697,7 +731,17 @@ body{
         height: 40rem;
         width: 100%;
     }
+    /* PÁGINA PRODUTOS - Sessão produtos*/
 
+    .conteudo__produtos__container{
+        height: auto;
+    }
+    .produtos__lista:first-child{
+        margin-top: 3rem;
+    }
+    .produtos__lista:last-child{
+        margin-bottom: 3rem;
+    }
     /*ELEMENTOS RODAPÉ*/
     .logotipo--rodape{
         width: 22rem;
