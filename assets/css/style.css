@@ -19,6 +19,7 @@ body{
     width: 100vw;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 *{
     box-sizing: border-box;
@@ -440,20 +441,23 @@ body{
         overflow-x: auto;
     }
     .conteudo__sobre{
-        height: auto;
+        height: 100%;
         width: 100%;
-        gap: 1rem;
-        padding-bottom: 0.5rem;
+        justify-content: space-between;
     }
     .conteudo__sobre__texto{
        width: 100%;
     }
     .conteudo__sobre__texto .titulo__padrao{
-        font-size:3rem;
+        font-size:2rem;
+        margin-bottom: 2rem;
     }
     .conteudo__sobre__texto .texto__padrao{
-        margin: 1rem 0.5rem;
+        margin: 1rem 0;
         font-size: 1.6rem;
+    }
+    .falelink__link{
+        font-size: 2rem;
     }
     .conteudo__sobre__falelink{
         width: 100%;
@@ -467,8 +471,12 @@ body{
         font-size: 2.3rem;
         margin: 0;
     }
+    .lista__item{
+        font-size: 2rem;
+    }
     .beneficios__img{
-        width:100%;        
+        width:100%; 
+        height: auto;       
     }
     .beneficios__video{
         width: 100%;
@@ -478,6 +486,7 @@ body{
     /* PÁGINA HOME - sessão localizacao */
 
     .localizacao__container{
+        height: auto;
         gap: 2rem;
         padding: 1rem;
     }
@@ -485,8 +494,11 @@ body{
         font-size: 1.7rem;
         margin: 0;
     }
+    .localizacao__container .texto__padrao{
+        font-size: 1.6rem;
+    }
     .localizacao__mapa{
-        height: 100%;
+        height: 35rem;
         width: 100%;
     }
 
@@ -552,47 +564,55 @@ body{
         overflow-x: auto;
     }
     .conteudo__sobre{
-        height: auto;
-        width: 100%;  
+        width: 100%;    
+        justify-content: space-between;
     }
     .conteudo__sobre__texto .titulo__padrao{
-        margin: 4rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
     }
     .conteudo__sobre__texto .texto__padrao{
-        margin: 1.5rem;
+        font-size: 1.8rem;
+        margin: 1.5rem 0;
+    }
+    .falelink__link{
+        font-size: 3rem;
     }
      
     /* PÁGINA HOME - Sessão sobre os beneficios*/
 
      .beneficios__container{
-        padding: 3rem 1rem 1rem 1rem;
+        padding:  1rem;
     }
     .beneficios__container .titulo__padrao{
         font-size: 3rem;
     }
+    .lista__item{
+        font-size: 2.7rem;
+    }
     .beneficios__img{
-        width:80%;        
+        height: auto;        
     }
     .beneficios__video{
         width: 100%;
-        height: 35rem;
     }
 
     /* PÁGINA HOME - sessão localizacao */
 
     .localizacao__container{
-        gap: 2rem;
-        padding: 1rem;
+        height: auto;
+        padding: 3rem 1rem 1rem 1rem;
+        gap:3rem;
     }
     .localizacao__container .titulo__padrao{
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         margin: 0;
     }
     .localizacao__container .texto__padrao{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .localizacao__mapa{
-        height: 100%;
+        height: 35rem;
         width: 100%;
     }
 
@@ -635,16 +655,24 @@ body{
         overflow-x: auto;
     }
     .conteudo__sobre{
-        height: auto;
         width: 100%;  
+        justify-content: space-between;
+        padding: 2rem;
     }
     .conteudo__sobre__texto .titulo__padrao{
-        margin: 4rem;
+       font-size: 4rem;
+       margin-bottom: 3rem;
     }
     .conteudo__sobre__texto .texto__padrao{
-        margin: 1.5rem;
+        margin: 1.5rem 0;
     }
     /* PÁGINA HOME - Sessão sobre os beneficios*/
+    .beneficios__container .titulo__padrao{
+        font-size: 4rem;
+    }
+    .lista__item{
+        font-size: 2.7rem;
+    }
     .beneficios__video{
         width: 100%;
         height: 35rem;
@@ -654,18 +682,20 @@ body{
 
     .localizacao__container{
         gap: 3rem;
-        padding: 1rem;
+        padding: 4rem 1rem 1rem 1rem;
+        height: auto;
     }
     .localizacao__container .titulo__padrao{
-        font-size: 2.8rem;
+        font-size: 4rem;
         margin: 0;
     }
     .localizacao__container .texto__padrao{
         font-size: 2.1rem;
+        text-align: center;
     }
     .localizacao__mapa{
-        height: 90%;
-        width: 90%;
+        height: 40rem;
+        width: 100%;
     }
 
     /*ELEMENTOS RODAPÉ*/
