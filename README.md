@@ -103,3 +103,6 @@ No processo de atualização da página “Home”, adicionei alguns elementos c
       </tr>
     </tbody>
   </table>
+  
+  ### Responsividade concluída:
+  <img width="400px" src="https://github.com/yagojsantos/barbearia-refeita/blob/main/doc_img_resp/resp_home2.gif" alt="Gif animado exibindo a página em diferentes dispositivos.">
