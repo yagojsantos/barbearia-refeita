@@ -82,3 +82,24 @@ Idealizar a nova proposta de layout do formulário foi uma árdua tarefa. Notei 
 <hr>
 
 # Próximo passo: Tornar todas as páginas responsivas. 
+
+### Desafio
+Essa foi a primeira vez que trabalhei com as propriedades do Flexbox, media queries, variáveis css e o padrão BEM, sem auxilio de algum vídeo, empregando apenas o que havia anotado e aprendido.
+
+
+## Home
+No processo de atualização da página “Home”, adicionei alguns elementos condizentes com o modelo apresentado durante o curso <a href="https://cursos.alura.com.br/course/html5-css3-avancando-css">HTML5 e CSS3 parte 4: avançando no CSS</a>, que estavam ausentes na versão anterior. 
+<table>
+    <thead>
+      <tr>
+        <th>Antes</th>
+        <th>Depois</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://yagojsantos.github.io/barbearia-alura-completa/"><img width="400px" src="https://github.com/yagojsantos/barbearia-alura-completa/blob/main/capa-nova-home.png" alt="Captura da página antes da recodificação"></a></td>
+        <td><a href="https://yagojsantos.github.io/barbearia-refeita/"><img width="400px" src="" alt="Captura da página como ela está atualmente"></a></td>
+      </tr>
+    </tbody>
+  </table>
