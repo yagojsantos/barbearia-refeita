@@ -98,8 +98,8 @@ No processo de atualização da página “Home”, adicionei alguns elementos c
     </thead>
     <tbody>
       <tr>
-        <td><a href="https://yagojsantos.github.io/barbearia-alura-completa/"><img width="400px" src="https://github.com/yagojsantos/barbearia-alura-completa/blob/main/capa-nova-home.png" alt="Captura da página antes da recodificação"></a></td>
-        <td><a href="https://yagojsantos.github.io/barbearia-refeita/"><img width="400px" src="" alt="Captura da página como ela está atualmente"></a></td>
+        <td><a href="https://yagojsantos.github.io/barbearia-alura-completa/"><img width="350px" src="https://github.com/yagojsantos/barbearia-alura-completa/blob/main/capa-nova-home.png" alt="Captura da página antes da recodificação"></a></td>
+        <td><a href="https://yagojsantos.github.io/barbearia-refeita/"><img width="350px" src="https://github.com/yagojsantos/barbearia-refeita/blob/main/doc_img_resp/resp_home1.png" alt="Captura da página como ela está atualmente"></a></td>
       </tr>
     </tbody>
   </table>
