@@ -734,7 +734,7 @@ body{
     /* PÁGINA PRODUTOS - Sessão produtos*/
 
     .conteudo__produtos__container{
-        height: auto;
+        min-height: 100vh;
     }
     .produtos__lista:first-child{
         margin-top: 3rem;
@@ -742,7 +742,9 @@ body{
     .produtos__lista:last-child{
         margin-bottom: 3rem;
     }
+
     /*ELEMENTOS RODAPÉ*/
+
     .logotipo--rodape{
         width: 22rem;
         height: 17rem;
