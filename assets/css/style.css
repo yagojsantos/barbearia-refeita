@@ -9,8 +9,7 @@
     --cor-fundo-transparente: rgba(0, 0, 0, 0.767);
 
     --fundo-cabecalho-rodape: url(../img/bg-rep.jpg);
-    --cor-borda-primaria:#b6b6b6;
-    --cor-borda-secundaria: #FFFFFF;
+    --borda-tracejada: 0.2rem dashed #b6b6b6;
 
     --fonte-titulo-primario:'Diplomata SC', cursive;
     --fonte-texto-primario:  'Inconsolata', monospace;
@@ -110,7 +109,7 @@ body{
     width: 60%;
     height: 100%;
     background-color: var(--cor-fundo-transparente);
-    border: 2px dashed var(--cor-borda-primaria);
+    border: var(--borda-tracejada);
     display: flex;
     flex-flow: column wrap;
     padding: 1rem;
@@ -238,7 +237,7 @@ body{
     height: 40rem;
     text-align: center;
     padding: 3rem 2rem;
-    border: 0.2rem dashed var(--cor-borda-secundaria);
+    border: var(--borda-tracejada);
     border-radius: 1rem;
     transition: all 0.4s;
     background: var(--cor-fundo-transparente);
@@ -279,30 +278,35 @@ body{
 }
 
 /* PÁGINA CONTATO - formulário*/
-.caixa_intinerario_funcionamento  .formulario_contato, .caixa_conteudo_contato{
-    box-sizing: border-box;
-    color: white;
-}
-.caixa_formulario_contato{
-    border: 2px solid grey;
-    border-radius: 20px;
+.contato__container{
+    width: 80%;
+    height: auto;
+    margin: 2rem 0;
+    border: var(--borda-tracejada);
+    border-radius: 2rem;
     background: var(--cor-fundo-transparente);
-    width: 940px;
-    margin: 0 auto;
-    padding-top: 10px;
+    display: flex;
+    flex-flow: column nowrap;
 }
-.caixa_conteudo_contato{
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 2%;
+.contato__form{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
-.caixa_conteudo_contato label{
+.form__field{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: red;
+}
+.form__field .texto__padrao{
     display: block;
     font-size: 1.2em;
     margin: 0.5em 0 ;
 }
-.dados_contato input,textarea{
+.fieldPadrao_dados input,textarea{
     padding: 10px 20px;
     width: 80%;
     margin-bottom: 1em;

@@ -1,98 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contato - Barbearia Alura</title>
-        <link rel="stylesheet" href="./assets/css/reset.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
-    <body>
-        <header class="cabecalho">
-            <div class="cabecalho__container">
-                <h1><a href="index.html"><img class="logotipo" src="./assets/img/barbearia-logo.png" alt="Logo da Barbearia."></a></h1>
-                <nav class="cabecalho__menu">
-                    <a class="cabecalho__menu__link" href="index.html">Home</a>
-                    <a class="cabecalho__menu__link" href="produtos.html">Produtos</a>
-                    <a class="cabecalho__menu__link" href="contato.html">Contato</a>
-                </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Barbearia Alura</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+            <h1><a href="index.html"><img class="logotipo" src="./assets/img/barbearia-logo.png"
+                        alt="Logo da Barbearia."></a></h1>
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__link" href="index.html">Home</a>
+                <a class="cabecalho__menu__link" href="produtos.html">Produtos</a>
+                <a class="cabecalho__menu__link" href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+    <main class="conteudo">
+        <div class="contato__container">
+            <form action="submit" class="contato__form">
+                <fieldset class="form__field dados_contato">
+                    <label for="nomecompleto">Nome e Sobrenome:<input type="text" id="nomecompleto" required></label>
+                    
+                    <label for="email">Email:<input type="email" id="email" placeholder="email@domínio.com" required></label>
+                    
+                    <label for="telefone">Telefone:<input type="tel" id="telefone" placeholder="(XX)xxxxx-xxxx" required></label>
+                    
+                    <label for="mensagem">Mensagem:<textarea id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea></label>
+                </fieldset>
+                <fieldset class="form__field__padrao preferencia_contato">
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio_email">
+                        <input type="radio" id="radio_email" name="opcoes_contato">
+                        Email
+                    </label>
+                    <label for="radio_telefone">
+                        <input type="radio" id="radio_telefone" name="opcoes_contato">
+                        Telefone
+                    </label>
+                    <label for="radio_whatsapp">
+                        <input type="radio" id="radio_whatsapp" name="opcoes_contato" checked>
+                        Whatsapp
+                    </label>
+                    <p>Qual período prefere ser atendido?</p>
+                    <select>
+                        <option value="Manhã">Manhã</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noite">Noite</option>
+                    </select>
+                    <label for="novidade_email">
+                        <input type="checkbox" id="novidade_email" checked>
+                        Gostaria de receber nossas novidades por email?
+                    </label>
+                    <fieldset>
+                        <input type="submit" value="Enviar Fomulário" class="bt_enviar">
+                        <img class="cv_aponta" src="imagens/cv-aponta.png" alt="Caveira apontando para botão de enviar">
+                    </fieldset>
+                </fieldset>
+
+            </form>
+            <div class="caixa_intinerario_funcionamento">
+                <p id="texto_funcionamento">Funcionamento</p>
+                <table>
+                    <thead>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda</td>
+                            <td>08:00 ~ 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>08:00 ~ 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td>08:00 ~ 20:00</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </header>
-        <main class="fundo_img_pgs">
-            <div class="pelicula">
-                <div class="caixa_formulario_contato">
-                    <form action="submit" class="formulario_contato">
-                        <fieldset class="caixa_conteudo_contato dados_contato">
-                                <label for="nomecompleto">Nome e Sobrenome:</label>
-                                <input type="text" id="nomecompleto" required>
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" placeholder="email@domínio.com" required>
-                                <label for="telefone">Telefone:</label>
-                                <input type="tel" id="telefone" placeholder="(XX)xxxxx-xxxx" required>
-                                <label for="mensagem">Mensagem:</label>
-                                <textarea id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
-                        </fieldset>
-                        <fieldset class="caixa_conteudo_contato preferencia_contato">
-                            <legend>Como prefere o nosso contato?</legend>
-                            <label for="radio_email">
-                                <input type="radio" id="radio_email" name="opcoes_contato">
-                                Email
-                            </label>
-                            <label for="radio_telefone">
-                                <input type="radio" id="radio_telefone" name="opcoes_contato">
-                                Telefone
-                            </label>
-                            <label for="radio_whatsapp">
-                                <input type="radio" id="radio_whatsapp" name="opcoes_contato" checked>
-                                Whatsapp
-                            </label>
-                            <p>Qual período prefere ser atendido?</p>
-                            <select>
-                                <option value="Manhã">Manhã</option>
-                                <option value="Tarde">Tarde</option>
-                                <option value="Noite">Noite</option>
-                            </select>
-                            <label for="novidade_email">
-                                <input type="checkbox" id="novidade_email" checked>
-                                Gostaria de receber nossas novidades por email?
-                            </label>
-                            <fieldset>
-                                <input type="submit" value="Enviar Fomulário" class="bt_enviar">
-                                <img class="cv_aponta" src="imagens/cv-aponta.png" alt="Caveira apontando para botão de enviar">    
-                            </fieldset>
-                        </fieldset>
-                        
-                    </form>
-                    <div class="caixa_intinerario_funcionamento">
-                        <p id="texto_funcionamento">Funcionamento</p><table>
-                            <thead>
-                                <th>Dia</th>
-                                <th>Horário</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Segunda</td>
-                                    <td>08:00 ~ 20:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Quarta</td>
-                                    <td>08:00 ~ 20:00</td>
-                                </tr> <tr>
-                                    <td>Sexta</td>
-                                    <td>08:00 ~ 20:00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="rodape">
-            <div class="rodape__container">
-                <a href="index.html"><img class="logotipo logotipo--rodape" src="./assets/img/barbearia-logo.png" alt="Logo da Barbearia."></a>
-                <p class="rodape__copyright">&#169;Copyright Recoding Barbearia - 2022</p>
-                <a class="ass__link" href="https://github.com/yagojsantos"><img class="ass__logo" src="./assets/img/ass-logo.png" alt="Desenvolvedor Yago."></a>  
-            </div>             
-        </footer>
-    </body>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="rodape__container">
+            <a href="index.html"><img class="logotipo logotipo--rodape" src="./assets/img/barbearia-logo.png"
+                    alt="Logo da Barbearia."></a>
+            <p class="rodape__copyright">&#169;Copyright Recoding Barbearia - 2022</p>
+            <a class="ass__link" href="https://github.com/yagojsantos"><img class="ass__logo"
+                    src="./assets/img/ass-logo.png" alt="Desenvolvedor Yago."></a>
+        </div>
+    </footer>
+</body>
+
 </html>
