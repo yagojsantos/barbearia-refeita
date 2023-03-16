@@ -98,14 +98,14 @@ body{
     font-size: 2.2rem;
 }
 /* PÁGINA HOME - Sessão sobre a barbearia */
-.conteudo__sobre__container{
+.sobre__container{
     background: url(../img/sobre-foto.jpg);
     background-size: cover;
     width: 100%;
     height: 836px;
     padding: 1rem;
 }
-.conteudo__sobre{
+.sobre__conteudo{
     width: 60%;
     height: 100%;
     background-color: var(--cor-fundo-transparente);
@@ -117,18 +117,18 @@ body{
     align-items: center;
     gap: 1rem;
 }
-.conteudo__sobre__texto{
+.sobre__texto{
     color: var(--cor-fonte-primaria);
     text-align: justify;
 }
-.conteudo__sobre__texto .titulo__padrao{
+.sobre__texto .titulo__padrao{
     font-size: 4rem;
 }
-.conteudo__sobre__texto .texto__padrao{
+.sobre__texto .texto__padrao{
     margin: 2rem;
     font-size: 2.1rem;
 }
-.conteudo__sobre__falelink{
+.sobre__contato{
     height: auto;
     width: 80%;
     display: flex;
@@ -137,20 +137,20 @@ body{
     flex-direction: column-reverse;
     gap: 1rem;
 }
-.falelink__img{
+.sobre__img{
     width: 40%;
     height: auto;
 }
-.falelink__link{
+.sobre__link{
     font-family: var(--fonte-texto-secundario);
     font-size: 3rem;
     text-decoration: none;
     color: var(--cor-fonte-primaria);
 }
-.falelink__link:hover{
+.sobre__link:hover{
     color: var(--cor-fonte-secundaria);
 }
-.falelink__link:active{
+.sobre__link:active{
     color: var(--cor-fonte-destaque);
 }
 /* PÁGINA HOME - Sessão sobre os beneficios*/
@@ -178,15 +178,15 @@ body{
    flex-flow: column wrap;
    gap: 1rem;
 }
-.beneficios__lista__item{
+.beneficios__item{
     font-size: 2.5rem;
     font-family: var(--fonte-texto-secundario);
 }
-.beneficios__lista__item::before{
+.beneficios__item::before{
     content:"☠";
     padding-right:1rem ;
 }
-.beneficios__lista__item:first-child{
+.beneficios__item:first-child{
     font-weight: 600;
 }
 .beneficios__img{
@@ -449,29 +449,29 @@ body{
     }
     
     /* PÁGINA HOME - Sessão sobre a barbearia */
-    .conteudo__sobre__container{
+    .sobre__container{
         overflow-x: auto;
     }
-    .conteudo__sobre{
+    .sobre__conteudo{
         height: 100%;
         width: 100%;
         justify-content: space-between;
     }
-    .conteudo__sobre__texto{
+    .sobre__texto{
        width: 100%;
     }
-    .conteudo__sobre__texto .titulo__padrao{
+    .sobre__texto .titulo__padrao{
         font-size:2rem;
         margin-bottom: 2rem;
     }
-    .conteudo__sobre__texto .texto__padrao{
+    .sobre__texto .texto__padrao{
         margin: 1rem 0;
         font-size: 1.6rem;
     }
-    .falelink__link{
+    .sobre__link{
         font-size: 2rem;
     }
-    .conteudo__sobre__falelink{
+    .sobre__contato{
         width: 100%;
     }
     /* PÁGINA HOME - Sessão sobre os beneficios*/
@@ -483,7 +483,7 @@ body{
         font-size: 2.3rem;
         margin: 0;
     }
-    .beneficios__lista__item{
+    .beneficios__item{
         font-size: 2rem;
     }
     .beneficios__img{
@@ -586,22 +586,22 @@ body{
         font-size: 2.1rem;
     }
     /* PÁGINA HOME - Sessão sobre a barbearia */
-    .conteudo__sobre__container{
+    .sobre__container{
         overflow-x: auto;
     }
-    .conteudo__sobre{
+    .sobre__conteudo{
         width: 100%;    
         justify-content: space-between;
     }
-    .conteudo__sobre__texto .titulo__padrao{
+    .sobre__texto .titulo__padrao{
         font-size: 3rem;
         margin-bottom: 2rem;
     }
-    .conteudo__sobre__texto .texto__padrao{
+    .sobre__texto .texto__padrao{
         font-size: 1.8rem;
         margin: 1.5rem 0;
     }
-    .falelink__link{
+    .sobre__link{
         font-size: 3rem;
     }
      
@@ -613,7 +613,7 @@ body{
     .beneficios__container .titulo__padrao{
         font-size: 3rem;
     }
-    .beneficios__lista__item{
+    .beneficios__item{
         font-size: 2.7rem;
     }
     .beneficios__img{
@@ -689,26 +689,26 @@ body{
         font-size: 2.1rem;
     }
      /* PÁGINA HOME - Sessão sobre a barbearia */
-     .conteudo__sobre__container{
+    .sobre__container{
         overflow-x: auto;
     }
-    .conteudo__sobre{
+    .sobre__conteudo{
         width: 100%;  
         justify-content: space-between;
         padding: 2rem;
     }
-    .conteudo__sobre__texto .titulo__padrao{
+    .sobre__texto .titulo__padrao{
        font-size: 4rem;
        margin-bottom: 3rem;
     }
-    .conteudo__sobre__texto .texto__padrao{
+    .sobre__texto .texto__padrao{
         margin: 1.5rem 0;
     }
     /* PÁGINA HOME - Sessão sobre os beneficios*/
     .beneficios__container .titulo__padrao{
         font-size: 4rem;
     }
-    .beneficios__lista__item{
+    .beneficios__item{
         font-size: 2.7rem;
     }
     .beneficios__video{
