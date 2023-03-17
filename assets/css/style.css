@@ -448,7 +448,8 @@ body{
         width: 100%;
     }
     .sobre__titulo{
-        font-size:2.2rem;
+        font-size:3rem;
+        text-align: center;
     }
     .sobre__texto{
        width: 100%;
