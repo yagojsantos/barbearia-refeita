@@ -121,6 +121,7 @@ body{
 }
 .sobre__titulo{
     font-size: 4rem;
+    text-align: center;
 }
 .sobre__texto{
     width: 95%;
@@ -150,6 +151,7 @@ body{
     font-size: 3rem;
     text-decoration: none;
     color: var(--cor-fonte-primaria);
+    text-align: center;
 }
 .sobre__link:hover{
     color: var(--cor-fonte-secundaria);
@@ -449,7 +451,6 @@ body{
     }
     .sobre__titulo{
         font-size:3rem;
-        text-align: center;
     }
     .sobre__texto{
        width: 100%;
