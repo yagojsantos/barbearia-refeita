@@ -22,6 +22,7 @@ body{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    background-color: #000000;
 }
 *{
     box-sizing: border-box;
@@ -84,14 +85,14 @@ body{
     font-family: var(--fonte-titulo-primario);
     color: var(--cor-fonte-primaria);
     font-size: 3rem;
-    text-align: center;
 }
 .paragrafo{
     text-align: justify;
     font-size: 2rem;
     font-family: var(--fonte-texto-primario);
+    color: var(--cor-fonte-primaria);
 }
-.texto__destaque{
+.destaque{
     color: var(--cor-fonte-destaque);
     font-style: italic;
     font-weight: bold;
@@ -104,6 +105,7 @@ body{
     width: 100%;
     height: 836px;
     padding: 1rem;
+    overflow-x: auto;
 }
 .sobre__conteudo{
     width: 60%;
@@ -112,21 +114,23 @@ body{
     border: var(--borda-tracejada);
     display: flex;
     flex-flow: column nowrap;
-    padding: 1rem;
+    padding: 1.5rem;
     align-self:flex-start;
     align-items: center;
-    gap: 1rem;
-}
-.sobre__texto{
-    color: var(--cor-fonte-primaria);
-    text-align: justify;
-    flex: 0.5 1 auto;
+    justify-content: space-around;
 }
 .sobre__titulo{
     font-size: 4rem;
 }
+.sobre__texto{
+    width: 95%;
+    text-align: justify;
+    flex: 0.5 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
 .sobre__paragrafo{
-    margin: 2rem;
     font-size: 2.1rem;
 }
 .sobre__contato{
@@ -140,7 +144,6 @@ body{
 }
 .sobre__img{
     width: 40%;
-    height: auto;
 }
 .sobre__link{
     font-family: var(--fonte-texto-secundario);
@@ -164,8 +167,6 @@ body{
     flex-flow: column nowrap;
     align-items: center;
     gap: 4rem;
-    background-color: #000000;
-    color: var(--cor-fonte-primaria);
 }
 .beneficios__conteudo{
     display: flex;
@@ -182,6 +183,7 @@ body{
 .beneficios__item{
     font-size: 2.5rem;
     font-family: var(--fonte-texto-secundario);
+    color: var(--cor-fonte-primaria);
 }
 .beneficios__item::before{
     content:"☠";
@@ -203,15 +205,8 @@ body{
 
 /* PÁGINA HOME - sessão localizacao */
 .localizacao__container{
-    width:100%;
-    color: var(--cor-fonte-primaria);
-    background: #000000;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0;
-    gap: 4rem;
+    width:100%;
 }
 .localizacao__mapa{
     width: 80%;
@@ -436,7 +431,6 @@ body{
         align-items: center;
         gap: 2rem;
     }
-
     .cabecalho__menu{
         gap: 0.8rem;
         align-items: center;
@@ -450,22 +444,16 @@ body{
     }
     
     /* PÁGINA HOME - Sessão sobre a barbearia */
-    .sobre__container{
-        overflow-x: auto;
-    }
     .sobre__conteudo{
-        height: 100%;
         width: 100%;
-        gap: 1rem;
+    }
+    .sobre__titulo{
+        font-size:2.2rem;
     }
     .sobre__texto{
        width: 100%;
     }
-    .sobre__titulo{
-        font-size:2.3rem;
-    }
     .sobre__paragrafo{
-        margin: 1rem 0;
         font-size: 1.6rem;
     }
     .sobre__link{
@@ -582,25 +570,18 @@ body{
     .cabecalho__menu__link:hover{
         font-size: 2.1rem;
     }
+
     /* PÁGINA HOME - Sessão sobre a barbearia */
-    .sobre__container{
-        overflow-x: auto;
-    }
+
     .sobre__conteudo{
-        width: 100%;    
-        gap: 1rem;
+        width: 100%;
     }
     .sobre__titulo{
         font-size: 3.5rem;
     }
     .sobre__paragrafo{
         font-size: 1.8rem;
-        margin: 1.5rem 0;
     }
-    .sobre__link{
-        font-size: 3rem;
-    }
-     
     /* PÁGINA HOME - Sessão sobre os beneficios*/
 
      .beneficios__container{
@@ -685,20 +666,17 @@ body{
         font-size: 2.1rem;
     }
      /* PÁGINA HOME - Sessão sobre a barbearia */
-    .sobre__container{
-        overflow-x: auto;
-    }
-    .sobre__conteudo{
-        width: 100%;  
-        gap: 1rem;
-        padding: 2rem;
-    }
-    .sobre__titulo{
-       font-size: 5rem;
-    }
-    .sobre__paragrafo{
-        margin: 1.5rem 0;
-    }
+
+     .sobre__conteudo{
+        width: 100%;
+     }
+     .sobre__titulo{
+        font-size: 5.5rem;
+     }
+     .sobre__link{
+        font-size: 5rem;
+     }
+    
     /* PÁGINA HOME - Sessão sobre os beneficios*/
     .beneficios__titulo{
         font-size: 4rem;
