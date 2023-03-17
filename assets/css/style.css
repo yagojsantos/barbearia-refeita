@@ -680,8 +680,11 @@ body{
         font-size: 5.5rem;
     }
     .beneficios__conteudo{
-        width: 90%;
+        width: 100%;
         gap: 3rem;
+    }
+    .beneficios__video{
+        width: 90%;
     }
     
     /* PÁGINA HOME - sessão localizacao */
