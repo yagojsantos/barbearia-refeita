@@ -242,11 +242,13 @@ body{
 .produtos__container{
     background-image: url(../img/bg-rep2.jpg);
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .produtos__lista{
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -256,13 +258,11 @@ body{
 .produtos__item{
     width: 23rem;
     height: 40rem;
-    text-align: center;
     padding: 3rem 2rem;
     border: var(--borda-tracejada);
     border-radius: 1rem;
     transition: all 0.4s;
     background: var(--cor-fundo-transparente);
-    color: var(--cor-fonte-primaria);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -276,7 +276,6 @@ body{
 }
 .produtos__item:active{
     background: var(--cor-fundo-transparente);
-    color: var(--cor-fonte-primaria);
 }
 .produtos__titulo{
     font-size: 2rem;
@@ -293,7 +292,9 @@ body{
 }
 .produtos__preco{
     font-size: 2rem;
-    font-weight: bold;  
+    font-weight: bold; 
+    font-style: italic; 
+    color: var(--cor-fonte-primaria);
 }
 
 /* PÁGINA CONTATO - formulário*/
@@ -518,20 +519,6 @@ body{
         height: 35rem;
         width: 100%;
     }
-    /* PÁGINA PRODUTOS - Sessão produtos*/
-    .produtos__container{
-        height: auto;
-    }
-    .produtos__lista{
-        flex-flow: column nowrap;
-        gap: 3rem;   
-    }
-    .produtos__lista:first-child{
-        margin-top: 3rem;
-    }
-    .produtos__lista:last-child{
-        margin-bottom: 3rem;
-    }
 
     /*ELEMENTOS RODAPÉ*/
     .logotipo--menor{
@@ -638,18 +625,6 @@ body{
         font-size: 2rem;
     }
 
-     /* PÁGINA PRODUTOS - Sessão produtos*/
-
-     .produtos__container{
-        height: auto;
-    }
-    .produtos__lista:first-child{
-        margin-top: 3rem;
-    }
-    .produtos__lista:last-child{
-        margin-bottom: 3rem;
-    }
-
      /*ELEMENTOS RODAPÉ*/
      .logotipo--menor{
         width: 22rem;
@@ -725,18 +700,26 @@ body{
     .localizacao__mapa{
         height: 40rem;
     }
+
     /* PÁGINA PRODUTOS - Sessão produtos*/
-
-    .produtos__container{
-        min-height: 100vh;
+    .produtos__item{
+        width: 39rem;
+        height: 60rem;
     }
-    .produtos__lista:first-child{
-        margin-top: 3rem;
+    .produtos__titulo{
+        font-size: 3rem;
     }
-    .produtos__lista:last-child{
-        margin-bottom: 3rem;
+    .produtos__icone{
+        width: 23rem;
+        height: 30rem;
     }
-
+    .produtos__paragrafo{
+        font-size: 2.2rem;
+    }
+    .produtos__preco{
+        font-size: 3rem;
+    }
+    
     /*ELEMENTOS RODAPÉ*/
 
     .logotipo--menor{
