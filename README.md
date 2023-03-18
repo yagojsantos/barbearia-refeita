@@ -106,3 +106,9 @@ No processo de atualização da página “Home”, adicionei alguns elementos c
   
   ### Responsividade concluída:
   <img width="400px" src="https://github.com/yagojsantos/barbearia-refeita/blob/main/doc_img_resp/resp_home2.gif" alt="Gif animado exibindo a página em diferentes dispositivos.">
+
+  ## Produtos
+Uma página com número menor de elementos HTML se comparado às demais, porém, isso não facilitou o processo de adaptação do layout, pelo contrário, a pequena quantidade de itens fez com que o background personalizado não se adequasse, não preenchendo o espaço por inteiro. Como solução utilizei a propriedade “min-height: 100vh;“  e para impedir que o rodapé cobrisse os itens em determinadas resoluções de tela, apliquei “padding: 4rem 1rem;”.
+
+### Responsividade concluída:
+  <img width="400px" src="https://github.com/yagojsantos/barbearia-refeita/blob/main/doc_img_resp/resp_produtos.gif" alt="Gif animado exibindo a página em diferentes dispositivos.">
