@@ -306,7 +306,7 @@ body{
     border-radius: 2rem;
     background: var(--cor-fundo-transparente);
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
 }
 .contato__form{
     width: 100%;
@@ -316,89 +316,118 @@ body{
 }
 .form__field{
     width: 40%;
-    height: auto;
     display: flex;
     flex-flow: column nowrap;
-    background-color: red;
 }
-.form__field .texto__padrao{
-    display: block;
-    font-size: 1.2em;
-    margin: 0.5em 0 ;
+.form__field__dados{
+    padding: 2rem;
+    gap: 1.5rem;
+    height: auto;
+    align-items: center;
 }
-.fieldPadrao_dados input,textarea{
-    padding: 10px 20px;
+.form__label, .form__legend{
+    color: var(--cor-fonte-primaria);
+    font-family: var(--fonte-texto-secundario); 
+}
+.form__field__dados .form__label{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
     width: 80%;
-    margin-bottom: 1em;
-    border: 1px solid black;
-    border-radius: 10px;
+    font-size: 1.8rem;
+}
+.form__inputText {
+    line-height: 3rem;
+    padding: 0 0.5rem;
+    font-size: 1.4rem;
+}
+#telefone{
+    width: 50%;
+}
+#mensagem{
     resize: none;
+    font-size: 1.4rem;
+    line-height: 2rem;
 }
-.preferencia_contato legend{
-    font-size: 1.5em;
-    padding-top: 0.5em;
+.form__field__contato {
+    gap: 1rem;
 }
-.preferencia_contato p{
-    font-size: 1.3em;
-    margin: 0.6em 0 0.4em ;
+.form__legend{
+   margin: 1rem 0;
+   font-size: 2.2rem;
 }
-.preferencia_contato select{
-    margin-bottom: 1em;
+.form__paragrafo{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    font-family: var(--fonte-texto-secundario);
 }
-.bt_enviar{
-    color: white;
+.form__field__contato .form__label{
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+.form__select{
+    border: var(--borda-tracejada);
+    width: 8rem;
+    text-align: center;
+    background-color: #000000;
+    color: var(--cor-fonte-secundaria);
+}
+.form__select:hover{
+    cursor: grab;
+    background-color:var(--cor-fundo-transparente);
+    color: #000000;
+}
+.form__btn{
+    color: var(--cor-fonte-primaria);
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 0.3em 0.5em;
-    background-color: black;
-    border: 2px dashed white;
+    background-color: #000000;
+    border: var(--borda-tracejada);
     border-radius: 10px;
     position: absolute;
     cursor: pointer;
     transition: all 1s;
+    
 }
-.bt_enviar:hover{
+.form__btn:hover{
     background-color: #888888;
     transform: scale(1.05);
 }
-.cv_aponta{
-    width: 250px;
-    height: 400px;
-    float: right;
-    margin-right: 5%;
+.form_img{
+    width: 25rem;
+    height: 40rem;
 }
-.caixa_intinerario_funcionamento{
+.contato_funcionamento{
     width: 100%;
-    height: 150px;
+    height: auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem;
 }
-.caixa_intinerario_funcionamento table,#texto_funcionamento{
-    display: inline-block;
+.contato_funcionamento .paragrafo{
+    font-style: italic;
+    font-size: 2.5rem;
 }
-#texto_funcionamento{
-   vertical-align:top;
-   font-size: 1.5em;
-   font-style: italic;
-   margin: 4% 8% 4% 5%;
-   color: white;
-}
-
-#texto_funcionamento::after{
-    content: "⇛ ";
-}
-.caixa_intinerario_funcionamento td,th{
+.contato__tabela{
     font-size: 1.2em;
-    border: 1px dotted white;
-    color: white;
+    border: 1px dotted #FFFFFF;
+    color: #FFFFFF;
+    line-height: 2rem;
 }
-.caixa_intinerario_funcionamento th{
+.contato__tabela th{
     font-weight: bold;
-  background-color: white;
-  font-style: italic;
-  line-height: 2em;
-  color: black;
+    background-color: #FFFFFF;
+    font-style: italic;
+    line-height: 2.5rem;
+    color: #000000;
+    font-size: 1.8rem;
 }
-.caixa_intinerario_funcionamento td{
+.contato__tabela td{
     padding: 0.3em;
 }
 /*Elementos do rodapé*/
