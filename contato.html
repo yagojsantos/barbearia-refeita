@@ -25,45 +25,52 @@
         <div class="contato__container">
             <form action="submit" class="contato__form">
                 <fieldset class="form__field form__field__dados">
-                    <label class="form__label" for="nomecompleto">Nome e Sobrenome:<input class="form__inputText" type="text" id="nomecompleto" required></label>
+                    <legend class="form__legend">Dados</legend>
+                    <label class="form__label" for="nomecompleto">Nome e Sobrenome:<input class="form__inputText"
+                            type="text" id="nomecompleto" required></label>
 
-                    <label class="form__label" for="email">Email:<input class="form__inputText" type="email" id="email" placeholder="email@domínio.com"
-                            required></label>
+                    <label class="form__label" for="email">Email:<input class="form__inputText" type="email" id="email"
+                            placeholder="email@domínio.com" required></label>
 
-                    <label class="form__label" for="telefone">Telefone:<input class="form__inputText" type="tel" id="telefone" placeholder="(XX)xxxxx-xxxx"
-                            required></label>
+                    <label class="form__label" for="telefone">Telefone:<input class="form__inputText" type="tel"
+                            id="telefone" placeholder="(XX)xxxxx-xxxx" required></label>
 
                     <label class="form__label" for="mensagem">Mensagem:<textarea id="mensagem" cols="30" rows="10"
                             placeholder="Digite sua mensagem aqui..."></textarea></label>
                 </fieldset>
                 <fieldset class="form__field form__field__contato">
                     <legend class="form__legend">Contato</legend>
-                    <p class="paragrafo form__paragrafo">Como prefere o nosso contato?</p>
-                    <label class="form__label" for="radio_email">
-                        <input type="radio" id="radio_email" name="opcoes_contato">
-                        Email
-                    </label>
-                    <label class="form__label" for="radio_telefone">
-                        <input type="radio" id="radio_telefone" name="opcoes_contato">
-                        Telefone
-                    </label>
-                    <label class="form__label" for="radio_whatsapp">
-                        <input type="radio" id="radio_whatsapp" name="opcoes_contato" checked>
-                        Whatsapp
-                    </label>
-                    <p class="paragrafo form__paragrafo">Qual período prefere ser atendido?</p>
-                    <select class="form__select">
-                        <option value="Manhã">Manhã</option>
-                        <option value="Tarde">Tarde</option>
-                        <option value="Noite">Noite</option>
-                    </select>
+                    <fieldset>
+                        <p class="paragrafo form__paragrafo">Como prefere o nosso contato?</p>
+                        <label class="form__label" for="radio_email">
+                            <input type="radio" id="radio_email" name="opcoes_contato">
+                            Email
+                        </label>
+                        <label class="form__label" for="radio_telefone">
+                            <input type="radio" id="radio_telefone" name="opcoes_contato">
+                            Telefone
+                        </label>
+                        <label class="form__label" for="radio_whatsapp">
+                            <input type="radio" id="radio_whatsapp" name="opcoes_contato" checked>
+                            Whatsapp
+                        </label>
+                    </fieldset>
                     <label class="form__label" for="novidade_email">
                         <input type="checkbox" id="novidade_email" checked>
-                        Gostaria de receber nossas novidades por email?
+                        Receber novidades por email.
                     </label>
                     <fieldset>
+                        <p class="paragrafo form__paragrafo">Qual período prefere ser atendido?</p>
+                        <select class="form__select">
+                            <option value="Manhã">Manhã</option>
+                            <option value="Tarde">Tarde</option>
+                            <option value="Noite">Noite</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
                         <input type="submit" value="Enviar" class="form__btn">
-                        <img class="form_img" src="assets/img/cv-aponta.png" alt="Caveira apontando para botão de enviar">
+                        <img class="form_img" src="assets/img/cv-aponta.png"
+                            alt="Caveira apontando para botão de enviar">
                     </fieldset>
                 </fieldset>
 

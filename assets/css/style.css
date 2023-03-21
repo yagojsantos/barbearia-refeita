@@ -302,8 +302,8 @@ body{
     width: 80%;
     height: auto;
     margin: 2rem 0;
+    padding: 2rem;
     border: var(--borda-tracejada);
-    border-radius: 2rem;
     background: var(--cor-fundo-transparente);
     display: flex;
     flex-flow: column wrap;
@@ -312,15 +312,16 @@ body{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
 }
 .form__field{
     width: 40%;
     display: flex;
     flex-flow: column nowrap;
+    padding: 2rem;
 }
 .form__field__dados{
-    padding: 2rem;
     gap: 1.5rem;
     height: auto;
     align-items: center;
@@ -350,17 +351,27 @@ body{
     line-height: 2rem;
 }
 .form__field__contato {
+    height: 65rem;
+    gap: 3rem;
+    align-items:center;
+}
+.form__field__contato fieldset{
+    display: flex;
+    flex-flow: column wrap;
     gap: 1rem;
 }
 .form__legend{
-   margin: 1rem 0;
-   font-size: 2.2rem;
+   padding: 0 1rem;
+   font-size: 2.5rem;
+}
+.form__legend::after,.form__legend::before{
+    content: " 🕱 ";
 }
 .form__paragrafo{
     font-size: 1.7rem;
     font-weight: 600;
-    margin-top: 2rem;
     font-family: var(--fonte-texto-secundario);
+    text-align:left;
 }
 .form__field__contato .form__label{
     font-size: 1.4rem;
@@ -376,7 +387,7 @@ body{
 .form__select:hover{
     cursor: grab;
     background-color:var(--cor-fundo-transparente);
-    color: #000000;
+    color: var(--cor-fonte-primaria);
 }
 .form__btn{
     color: var(--cor-fonte-primaria);
@@ -396,18 +407,17 @@ body{
     transform: scale(1.05);
 }
 .form_img{
-    width: 25rem;
-    height: 40rem;
+    width: 20rem;
+    height: 32rem;
 }
 .contato_funcionamento{
     width: 100%;
     height: auto;
-    text-align: center;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
-    padding: 2rem;
 }
 .contato_funcionamento .paragrafo{
     font-style: italic;
