@@ -1,4 +1,4 @@
-![yagojsantos-repo-status](https://img.shields.io/badge/Status-Em_Andamento-lightgrey?style=for-the-badge&logo=headspace&logoColor=yellow&color=lightgrey)
+![yagojsantos-repo-status](https://img.shields.io/badge/Status-Concluído-lightgrey?style=for-the-badge&logo=headspace&logoColor=green&color=lightgrey)
 # Barbearia-refeita
 
 A fim de testar os conhecimentos obtidos até o momento, resolvi recodificar e unificar os 3 projetos desenvolvidos da Barbearia Alura (Home, Produtos, Contato), desenvolvendo o html e o css do zero, usando apenas o que havia absorvido.
@@ -83,8 +83,12 @@ Idealizar a nova proposta de layout do formulário foi uma árdua tarefa. Notei 
 
 # Próximo passo: Tornar todas as páginas responsivas. 
 
+## Geral
+Conforme a meta, todas as páginas estão responsivas e se adaptam em telas de smartphones, tablets e notebooks/monitores.  
+
 ### Desafio
-Essa foi a primeira vez que trabalhei com as propriedades do Flexbox, media queries, variáveis css e o padrão BEM, sem auxilio de algum vídeo, empregando apenas o que havia anotado e aprendido.
+Essa foi a primeira vez que trabalhei com as propriedades do Flexbox, media queries, variáveis css e o padrão BEM, sem auxílio de algum vídeo e empregando apenas o que havia anotado ou aprendido. O maior obstáculo (e o que me fez gastar mais tempo), foi a implementação do padrão de nomenclaturas BEM, já que por muitas vezes, foi necessário a utilização de Módulos dentro de Módulos, oque causou diversas dúvidas na hora de nomear as classes.
+
 
 
 ## Home
@@ -112,3 +116,16 @@ Uma página com número menor de elementos HTML se comparado às demais, porém,
 
 ### Responsividade concluída:
   <img width="400px" src="https://github.com/yagojsantos/barbearia-refeita/blob/main/doc_img_resp/resp_produtos.gif" alt="Gif animado exibindo a página em diferentes dispositivos.">
+
+  ## Contato
+Pela quantidade de elementos e divisões, fora as propriedades anteriormente empregadas para o posicionamento dos mesmos, posso dizer que essa, com toda a certeza, foi a página mais desafiadora do projeto, mas através da utilização da tag fieldset e um agrupamento estratégico, consegui elaborar uma lógica de responsividade robusta que supriu a necessidade de criar estilizações dentro dos breakingpoints para os demais dispositivos.
+
+### Responsividade concluída:
+  <img width="400px" src="https://github.com/yagojsantos/barbearia-refeita/blob/main/doc_img_resp/resp_contato.gif" alt="Gif animado exibindo a página em diferentes dispositivos.">
+
+<hr>
+  
+  ## Ferramentas e Tecnologias
+  <img alt="yagojsantos ícone-HTML" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img alt="yagojsantos ícone-CSS" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img alt="yagojsantos ícone-VSCode" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
